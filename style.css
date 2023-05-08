@@ -45,6 +45,7 @@ li a {
 
 p {
   font-family: Lora, serif;
+  margin-top: 10px;
 }
 
 img {
@@ -55,8 +56,7 @@ img {
 .contenedor-iframe {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .contenedor-iframe iframe {
@@ -65,4 +65,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+h3{
+  font-family: Genos, sans-serif;
+  margin-bottom: 10px;
 }
