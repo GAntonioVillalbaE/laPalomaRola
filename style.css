@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Genos);
-@import url(//fonts.googleapis.com/css?family=Lora?category=Serif);
+@import url(//fonts.googleapis.com/css?family=Lora);
 
 header {
   background-color: black;
@@ -13,6 +13,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-right: 50px;
 }
 
 li {
@@ -26,6 +27,7 @@ li a {
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .titulo{
@@ -38,4 +40,10 @@ li a {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  max-width: 700px;
+}
+
+p{
+  font-family: Lora, serif;
+ 
 }
