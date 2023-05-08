@@ -1,3 +1,6 @@
+@import url(//fonts.googleapis.com/css?family=Genos);
+@import url(//fonts.googleapis.com/css?family=Lora?category=Serif);
+
 header {
   background-color: black;
   position: fixed;
@@ -17,6 +20,7 @@ li {
 }
 
 li a {
+  font-family: Genos, sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -25,6 +29,13 @@ li a {
 }
 
 .titulo{
+  font-family: Genos, sans-serif;
   position: relative;
   margin-top: 100px;
+}
+
+#contenido{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
