@@ -16,6 +16,10 @@ ul {
   margin-right: 50px;
 }
 
+a{
+   font-family: Lora, serif;
+}
+
 li {
   float: right;
 }
@@ -71,3 +75,5 @@ h3{
   font-family: Genos, sans-serif;
   margin-bottom: 10px;
 }
+
+
