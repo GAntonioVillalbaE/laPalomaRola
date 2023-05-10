@@ -1,11 +1,14 @@
-let botonAbrir = document.getElementsByIdName("boton-abrir-ventana");
-let botonCerrar = document.getElementByIdName("boton-cerrar-ventana");
+let botonAbrirVentana1 = document.getElementById("boton-abrir-ventana-1");
+let botonCerrarVentana1 = document.getElementById("boton-cerrar-ventana-1");
 
-let ventana1 = document.getElementById("ventana-emergente-1");
+let ventana = document.getElementById("ventana-emergente-x");
 
 
-console.log(botonAbrir.length);
-
-botonAbrir.onclick = function(){
-  ventana1.style.display = "block";
+botonAbrirVentana1.onclick = function(){
+  ventana.style.display = "block";
 }
+
+botonCerrarVentana1.onclick = function(){
+  ventana.style.display = "none";
+}
+
