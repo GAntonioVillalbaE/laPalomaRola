@@ -104,3 +104,16 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
+
+#contenedor-imagen-fondo{
+  max-width: 100vw;
+  max-height: 100vh;
+  position: absolute;
+  background-color: red;
+}
+
+#contenedor-imagen-fondo img{
+  height: 200%;
+  width: auto;
+  object-fit: cover;
+}
