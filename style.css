@@ -96,3 +96,11 @@ h3 {
   position: relative;
   float: right;
 }
+
+#contenedor-botones{
+  width: 100%;
+  background-color: grey;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
