@@ -12,7 +12,7 @@ header {
   top: 0;
   z-index: 10;
 }
-
+/*
 ul {
   list-style-type: none;
   margin: 0;
@@ -37,7 +37,7 @@ li a {
   text-decoration: none;
   font-size: 20px;
 }
-
+*/
 .titulo {
   font-family: Genos, sans-serif;
   position: relative;
@@ -119,3 +119,4 @@ h3 {
   height: 100%;
   object-fit: cover;
 }
+
