@@ -151,15 +151,6 @@ h3 {
   position: relative;
 }
 
-/*
-#contenedor-derecho img{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-}
-*/
-
 #contenedor-derecho img{
   width: 100%;
   height: auto;
