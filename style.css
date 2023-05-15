@@ -175,6 +175,11 @@ h3 {
 }
 
 
+#contenido img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 /* ---------------------*/
 
 
@@ -186,3 +191,10 @@ h3 {
   width: 100px;
   height: 100px;
 }
+
+#contenedor-imagen{
+ width: 100%;
+ height: 100%;
+}
+
+
