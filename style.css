@@ -82,7 +82,7 @@ h3 {
   right: 20%;
   background-color: grey;
   position: fixed;
-  display: none;
+  display: block;
   top: 50%;
   transform: translateY(-50%);
 }
