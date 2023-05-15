@@ -120,5 +120,16 @@ h3 {
   object-fit: cover;
 }
 
+/* pantalla dividida */
+
+#contenedor-dividido{
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
 
 
