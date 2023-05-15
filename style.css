@@ -136,7 +136,7 @@ h3 {
 }
 
 #contenedor-izquierdo {
-  width: 50%;
+  width: 60%;
   height: auto;
   background-color: green;
   display: inline-block;
@@ -144,7 +144,7 @@ h3 {
 }
 
 #contenedor-derecho {
-  width: 50%;
+  width: 40%;
   height: auto;
   background-color: blue;
   display: inline-block;
@@ -161,12 +161,11 @@ h3 {
 */
 
 #contenedor-derecho img{
-  width: 80%;
+  width: 100%;
   height: auto;
   position: absolute;
-  left: -50%;
-  top: 20%;
-  transform: translateX(-50);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #contenedor-izquierdo p {
