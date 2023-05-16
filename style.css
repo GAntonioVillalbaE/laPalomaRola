@@ -82,7 +82,7 @@ h3 {
   right: 20%;
   background-color: grey;
   position: fixed;
-  display: block;
+  display: none;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -205,6 +205,10 @@ h3 {
   height: 17%;
 }
 
+#zona-clickeable-1:hover{
+  cursor: pointer;
+}
+
 #zona-clickeable-2{
   border-style: solid;
   border-width: 2px;
@@ -214,6 +218,10 @@ h3 {
   left: 57%;
   width: 11%;
   height: 17%;
+}
+
+#zona-clickeable-2:hover{
+  cursor: pointer;
 }
 
 
