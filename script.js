@@ -30,7 +30,9 @@ try {
 /*  audio */
 let sonido = document.getElementById("sonido-automatico");
 
-document.body.onmousemove = function () {
-  console.log("se movio el mouse");
-  sonido.play();
-};
+try {
+  document.onmousemove = function () {
+    console.log("se movio el mouse");
+    sonido.play();
+  };
+} catch (e) {}
