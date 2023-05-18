@@ -26,3 +26,6 @@ zonaclickeable2.onclick = function () {
   window.location.href = "https://es.wikipedia.org/wiki/Nariz";
 };
 
+
+
+
