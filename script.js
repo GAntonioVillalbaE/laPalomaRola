@@ -13,19 +13,24 @@ try {
   };
 } catch (e) {}
 
+try {
+  let zonaclickeable1 = document.getElementById("zona-clickeable-1");
 
-let zonaclickeable1 = document.getElementById("zona-clickeable-1");
+  zonaclickeable1.onclick = function () {
+    window.location.href = "https://es.wikipedia.org/wiki/Ojo";
+  };
 
-zonaclickeable1.onclick = function () {
-  window.location.href = "https://es.wikipedia.org/wiki/Ojo";
- };
+  let zonaclickeable2 = document.getElementById("zona-clickeable-2");
 
-let zonaclickeable2 = document.getElementById("zona-clickeable-2");
+  zonaclickeable2.onclick = function () {
+    window.location.href = "https://es.wikipedia.org/wiki/Nariz";
+  };
+} catch (e) {}
 
-zonaclickeable2.onclick = function () {
-  window.location.href = "https://es.wikipedia.org/wiki/Nariz";
+/*  audio */
+let sonido = document.getElementById("sonido-automatico");
+
+document.body.onmousemove = function () {
+  console.log("se movio el mouse");
+  sonido.play();
 };
-
-
-
-
