@@ -38,7 +38,9 @@ try {
   };
 } catch (e) {}
 */
-document.onmousemove = function () {
+
+
+function reproducirSonido() {
   /*
   if (
     sonidoAmbiente.paused ||
@@ -47,9 +49,9 @@ document.onmousemove = function () {
   ) {
     console.log("audio no ha empezado, finalizó o está en pausa");
     */
-    //sonidoAmbiente.play();
-  
-};
+  console.log("reproducirsonido");
+  sonidoAmbiente.play();
+}
 
 const cargarSonido = function (fuente) {
   const sonido = document.createElement("audio");
