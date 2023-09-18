@@ -11,6 +11,7 @@ body {
   background-color: lightblue;
   margin: 0;
   font-family: Wallpoet, serif;
+/*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
 }
 
 
@@ -80,13 +81,14 @@ p {
 #contenido {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  text-align: justify;
+  width: 90%;
   max-width: 700px;
 }
 
 
 
-.contenedor-iframe {
+.contenedor-iframe { /* Para usar en video youtube, que se haga responsive */
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
