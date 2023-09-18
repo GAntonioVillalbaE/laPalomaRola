@@ -11,8 +11,9 @@ body {
   background-color: lightblue;
   margin: 0;
   font-family: Wallpoet, serif;
-/*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
 }
+
+/*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
 
 
 /* ---------------------*/
@@ -163,6 +164,20 @@ p {
  height: 100%;
  position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
