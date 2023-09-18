@@ -21,6 +21,7 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
+        display: none; /*no se mostraría el botón; en JS se modifica de Display none a block para Pop Ups */
 /*         position: absolute; /*todos los botones punto 0 de origen con respecto a quién los contiene+/ */
 /*         display: block; */
         font-size: 16px;
@@ -93,16 +94,24 @@
 
       <!--       <button type="button">Click Me!</button> -->
 
+
+
+      
+<!--       Para abrir hipervínculo interno -->
+      
+      <!--       onclick="window.location.href='Video.html';" -->
+      
+      
+<!--       Para abrir en ventana nueva -->
+<!--         onclick="window.open('https://google.com', '_blank')" -->
+
+      
       <div>
-        <button onclick="window.location.href='Audio.html';"
-                target="_blank"
+        <button onclick="window.open('Audio.html', '_blank')"
  class="button button1">Audio</button>
         
-      
        
-        <button onclick="window.location.href='Video.html';"
-                onclick="window.open('https://google.com', '_blank')"
-
+        <button onclick="window.open('Video.html', '_blank')"
  class="button button2">Video</button>
         
 
