@@ -22,63 +22,57 @@
         text-decoration: none;
         display: inline-block;
         display: none; /*no se mostraría el botón; en JS se modifica de Display none a block para Pop Ups */
-/*         position: absolute; /*todos los botones punto 0 de origen con respecto a quién los contiene+/ */
-/*         display: block; */
+        /*         position: absolute; /*todos los botones punto 0 de origen con respecto a quién los contiene+/ */
+        /*         display: block; */
         font-size: 16px;
         margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
       }
 
-    
       .button1 {
         background-color: #4caf50;
-        color: black; 
-  border: 2px solid #4CAF50;
+        color: black;
+        border: 2px solid #4caf50;
       } /* Green */
-      
-      .button1:hover {
-  background-color: black;
-  color: white;
-}
-      
-        .button2 {
-        background-color: #008cba;
-          color: black; 
-  border: 2px solid #008CBA;
-      } /* Blue */
- 
-.button2:hover {
-  background-color: black;
-  color: white;
-}
-      
-      
-            .button3 {
-        background-color: #4caf50;
-        color: black; 
-  border: 2px solid #4CAF50;
-      } /* Green */
-      
-      .button3:hover {
-  background-color: white;
-  color: black;
-}
-      
-        .button4 {
-        background-color: #008cba;
-          color: black; 
-  border: 2px solid #008CBA;
-      } /* Blue */
- 
-.button4:hover {
-  background-color: white;
-  color: black;
-}
 
-      
-      
-      
+      .button1:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .button2 {
+        background-color: #008cba;
+        color: black;
+        border: 2px solid #008cba;
+      } /* Blue */
+
+      .button2:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .button3 {
+        background-color: #4caf50;
+        color: black;
+        border: 2px solid #4caf50;
+      } /* Green */
+
+      .button3:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .button4 {
+        background-color: #008cba;
+        color: black;
+        border: 2px solid #008cba;
+      } /* Blue */
+
+      .button4:hover {
+        background-color: white;
+        color: black;
+      }
     </style>
   </head>
 
@@ -89,35 +83,45 @@
       </ul>
     </header>
 
-    <div>
+<!--     <div> -->
       <h1>Botones &lt;button&gt;&lt;/button&gt;</h1>
 
       <!--       <button type="button">Click Me!</button> -->
 
-  
-<!--       Para abrir hipervínculo interno -->
-      
+      <!--       Para abrir hipervínculo interno -->
       <!--       onclick="window.location.href='Video.html';" -->
-      
-      
-<!--       Para abrir en ventana nueva -->
-<!--         onclick="window.open('https://google.com', '_blank')" -->
-           <div>
-        <button onclick="window.open('Audio.html', '_blank')"
- class="button button1">Audio</button>
-        
-       
-        <button onclick="window.open('Video.html', '_blank')"
- class="button button2">Video</button>
-        
 
-        <button onclick="window.location.href= 'https://w3docs.com';"
- class="button button3">Botón 3</button>
+      <!--       Para abrir en ventana nueva -->
+      <!--         onclick="window.open('https://google.com', '_blank')" -->
+<!--       <div> -->
+        <button
+                onclick="window.location.href='Audio.html';"
+                class="button button1"
+                  >
+          Audio
+        </button>
 
-        <button onclick="window.location.href='https://w3docs.com';"
- class="button button4">Botón 4</button>
-               
-      </div>
-    </div>
+        <button
+          onclick="window.open('Video.html', '_blank')"
+          class="button button2"
+        >
+          Video
+        </button>
+
+        <button
+          onclick="window.location.href= 'https://w3docs.com';"
+          class="button button3"
+        >
+          Botón 3
+        </button>
+
+        <button
+          onclick="window.location.href='https://w3docs.com';"
+          class="button button4"
+        >
+          Botón 4
+        </button>
+<!--       </div> -->
+<!--     </div> -->
   </body>
 </html>
