@@ -1,7 +1,7 @@
-/* @import url(//fonts.googleapis.com/css?family=Genos);
+/* @import url(//fonts.googleapis.com/css?family=Genos); */
 
 
-@import url(//fonts.googleapis.com/css?family=Lora); */
+@import url(//fonts.googleapis.com/css?family=Lora);
 
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 
@@ -9,7 +9,8 @@
 body {
   background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
   background-color: lightblue;
-    margin: 0;
+  margin: 0;
+  font-family: Wallpoet, serif;
 }
 
 
@@ -19,6 +20,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 10;
+  font-family: Lora, serif;
 }
 
 h1 {
@@ -41,8 +43,8 @@ li {
   float: right;
 }
 
-li a {
-  font-family: Genos, sans-serif;
+ul li a {
+  font-family: Wallpoet, sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -51,10 +53,13 @@ li a {
   font-size: 20px;
 }
 
-.titulo {
-  font-family: Genos, sans-serif;
+
+
+.titulosRojos { /* para H1 en Párrafos */
+  font-family: Wallpoet, sans-serif;
   position: relative;
   margin-top: 100px;
+  color: red;
 }
 
 #contenido {
