@@ -15,6 +15,9 @@ body {
 }
 
 
+/* ---------------------*/
+
+
 header {
   background-color: black;
   position: fixed;
@@ -27,15 +30,32 @@ header {
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,116,121,1) 35%, rgba(236,0,255,1) 100%);
 }
 
+/* ---------------------*/
+
+
 h1 {
   text-align: center;
 }
+
+
+
+.titulosRojos { /* para H1 en Párrafos */
+  font-family: Wallpoet, sans-serif;
+  position: relative;
+  margin-top: 100px;
+  color: red;
+}
+
 
 
 h3 {
   font-family: Genos, sans-serif;
   margin-bottom: 10px;
 }
+
+
+
+/* ---------------------*/
 
 
 ul {
@@ -63,14 +83,7 @@ ul li a {
   font-size: 20px;
 }
 
-
-
-.titulosRojos { /* para H1 en Párrafos */
-  font-family: Wallpoet, sans-serif;
-  position: relative;
-  margin-top: 100px;
-  color: red;
-}
+/* ---------------------*/
 
 
 
@@ -81,13 +94,16 @@ p {
 
 
 
-#contenido {
+#contenido { /* para una p local para este caso en Párrafos */
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   width: 90%;
   max-width: 700px;
 }
+
+
+/* ---------------------*/
 
 
 .contenedor-iframe { /* Para usar en video youtube, que se haga responsive */
@@ -105,22 +121,9 @@ p {
 }
 
 
-/* .ventana-emergente {
-  width: 60%;
-  height: 60%;
-  left: 20%;
-  right: 20%;
-  background-color: grey;
-  position: fixed;
-  display: none;
-  top: 50%;
-  transform: translateY(-50%);
-}
+/* ---------------------*/
 
-.boton-cerrar-ventana {
-  position: relative;
-  float: right;
-} */
+
 
 #contenedor-botones {
   width: 100%;
@@ -146,6 +149,25 @@ p {
  position: relative;
 }
 
+
+
+/*  Para uso con PopUps */
+/* .ventana-emergente {
+  width: 60%;
+  height: 60%;
+  left: 20%;
+  right: 20%;
+  background-color: grey;
+  position: fixed;
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.boton-cerrar-ventana {
+  position: relative;
+  float: right;
+} */
 
 
 
