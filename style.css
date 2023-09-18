@@ -1,50 +1,17 @@
+/* @import url(//fonts.googleapis.com/css?family=Genos);
+
+
+@import url(//fonts.googleapis.com/css?family=Lora); */
+
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+
 body {
   background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
   background-color: lightblue;
+    margin: 0;
 }
 
-h1 {
-  text-align: center;
-}
-
-
-
-
-/* Conceptos divs */
-
-
-/* #contenedor-padre{
-  width: 40%;
-  height: 50px;
-  background-color: blue;
-  position: absolute;
-}
-
-#contenedor-hijo{
-  width: 50%;
-  height: 50%;
-  background-color: red;
-}
-
-#contenedor-padre2{
-  width: 40%;
-  height: 50px;
-  background-color: green;
-  position: absolute;
-} */
-
-
-@import url(//fonts.googleapis.com/css?family=Genos);
-
-
-@import url(//fonts.googleapis.com/css?family=Lora);
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Wallpoet&display=swap');
-
-
-body {
-  margin: 0;
-}
 
 header {
   background-color: black;
@@ -54,6 +21,11 @@ header {
   z-index: 10;
 }
 
+h1 {
+  text-align: center;
+}
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -62,7 +34,7 @@ ul {
 }
 
 a {
-  font-family: Lora, serif;
+  font-family: Wallpoet, serif;
 }
 
 li {
@@ -239,5 +211,28 @@ h3 {
 
 
 
+
+/* Conceptos divs */
+
+
+/* #contenedor-padre{
+  width: 40%;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+}
+
+#contenedor-hijo{
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+
+#contenedor-padre2{
+  width: 40%;
+  height: 50px;
+  background-color: green;
+  position: absolute;
+} */
 
 
