@@ -132,10 +132,6 @@ p {
 
 
 
-#contenido img {
-  width: 100%;
-  margin-bottom: 10px;
-}
 
 /* ---------------------*/
 
@@ -155,7 +151,7 @@ p {
 
 /* pantalla dividida */
 
-#contenedor-dividido {
+/* #contenedor-dividido {
   width: 100%;
   height: auto;
   min-height: 100vh;
@@ -212,14 +208,14 @@ p {
   position: relative;
 }
 
+ */
 
 
 
 
 
 
-
-/* Conceptos divs */
+/* Conceptos divs (padre hijo) */
 
 
 /* #contenedor-padre{
