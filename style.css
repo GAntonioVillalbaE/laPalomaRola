@@ -6,3 +6,26 @@ body {
 /* h1 {
   text-align: center;
 } */
+
+
+
+
+#contenedor-padre{
+  width: 40%;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+}
+
+#contenedor-hijo{
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+
+#contenedor-padre2{
+  width: 40%;
+  height: 50px;
+  background-color: green;
+  position: absolute;
+}
