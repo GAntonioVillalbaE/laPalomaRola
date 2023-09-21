@@ -162,19 +162,20 @@ p {
 
 
 
-#contenido { /* para una p local, para este caso en Párrafos */
+#contenido2 { /* para una p local, para este caso en Párrafos */
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   width: 90%;
-  max-width: 700px;
+  max-width: 700px; 
 }
+  
 
 
 
 /* ------ Párrafos con animación--- */
 
-/* 
+
  #contenido {
   margin-left: auto;
   margin-right: auto;
@@ -185,10 +186,10 @@ p {
   animation-name: slidein;
    animation-direction: alternate;
    position: relative;
-} */
+}
 
-/* @keyframes slidein {
-  from {
+@keyframes slidein {
+/*   from {
     margin-left: 100%;
     width: 300%;
   }
@@ -196,13 +197,13 @@ p {
   to {
     margin-left: 27%;
     width: 100%;
-  } 
-   */
-/*    0%   {background: red; left: 0px; top: 0px;}
+  }  */
+  
+   0%   {background: red; left: 0px; top: 0px;}
   25%  {background: yellow; left: 200px; top: 0px;}
   50%  {background: blue; left: 200px; top: 200px;}
   75%  {background: green; left: 0px; top: 200px;}
-  100% {background: red; left: 0px; top: 0px;} */
+  100% {background: red; left: 0px; top: 0px;}
 }
 
 
