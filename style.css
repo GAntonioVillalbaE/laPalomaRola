@@ -151,7 +151,7 @@ p {
 
 /* ------ párrafos con animación--- */
 
-
+/* 
  #contenido {
   margin-left: auto;
   margin-right: auto;
@@ -162,7 +162,7 @@ p {
   animation-name: slidein;
    animation-direction: alternate;
    position: relative;
-}
+} */
 
 @keyframes slidein {
   from {
@@ -183,7 +183,7 @@ p {
 }
 
 
-/* ---------------------*/
+/* ----------Estilo para contenedor de iframe-----------*/
 
 
 .contenedor-iframe { /* Para usar en video youtube, que se haga responsive */
@@ -192,7 +192,7 @@ p {
   overflow: hidden;
 }
 
-.contenedor-iframe iframe { /* el iframe que esté dentro del contenedor i frame */
+.contenedor-iframe iframe { /* el iframe que está dentro del contenedor-iframe */
   position: absolute;
   top: 0;
   left: 0;
