@@ -181,6 +181,30 @@ p {
 }
 
 
+/* ---------------------*/
+
+
+
+#contenedor-dividido {
+  width: 100%;
+  height: auto;
+  background-color: green;
+  display: flex;
+}
+
+#contenedor-izquierdo {
+  width: 50%;
+}
+
+#contenedor-derecho {
+  width: 50%;
+}
+
+#contenedor-derecho img{
+  width: 100%;
+}
+
+
 
 
 /* ---------------------*/
