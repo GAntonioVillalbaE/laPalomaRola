@@ -10,7 +10,7 @@ botonAbrirVentana.onclick = function () {
   ventana[0].style.display = "block"; /*block efecto de ocupar espacio a lo ancho*/
 };
 
-/* camelCase */
+/* sugerencia escribir en camelCase */
 
 
 botonCerrarVentana.onclick = function () {
