@@ -270,9 +270,9 @@ p {
 display: none; 
   
   
-  .ventana-emergente button{
+  .ventana-emergente #boton-cerrar {
   float: right;
-    
+    position: relative;
 }
 
 }
@@ -281,7 +281,7 @@ display: none;
   .ventana-emergente img {
     width: 100%;
   height: 100%; 
-  position: relative;
+  position: absolute;
   outline-style: solid;
   outline-color: white;
   overflow: scroll;
