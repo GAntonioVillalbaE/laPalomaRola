@@ -220,11 +220,31 @@ p {
   left: 50%;
   transform: translateY(-50%) translateX(-50%); /*restar 50% de él mismo una vez puesto el top de la coordenada en la mitad  */
 display: none; 
-}
-
-.ventana-emergente button{
+  
+  
+  .ventana-emergente button{
   float: right;
 }
+
+}
+
+
+
+.ventana-emergente img {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  outline-style: solid;
+  outline-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: scroll;
+/*   z-index: -1; */
+}
+
+
 
 
 /*
