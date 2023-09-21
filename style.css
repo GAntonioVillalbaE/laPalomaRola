@@ -164,7 +164,7 @@ p {
    position: relative;
 } */
 
-@keyframes slidein {
+/* @keyframes slidein {
   from {
     margin-left: 100%;
     width: 300%;
@@ -174,7 +174,7 @@ p {
     margin-left: 27%;
     width: 100%;
   } 
-  
+   */
 /*    0%   {background: red; left: 0px; top: 0px;}
   25%  {background: yellow; left: 200px; top: 0px;}
   50%  {background: blue; left: 200px; top: 200px;}
@@ -236,7 +236,7 @@ p {
 #contenedor-dividido {
   width: 100%;
   height: auto;
-  background-color: green;
+  background-color: blue;
   display: flex;
 }
 
