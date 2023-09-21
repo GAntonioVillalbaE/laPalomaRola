@@ -7,7 +7,7 @@
 
 
 
-/* ------Este estilo aplica para todos los body---- */
+/* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
 
 body {
   background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
@@ -27,7 +27,7 @@ body {
 }
 
 
-/* ----estilo para el selector del div en html llamado id = "contenedor-imagen"---- */
+/* ----Estilo para el selector del div o los divs en html llamado id = "contenedor-imagen"---- */
 
 
 #contenedor-imagen{
@@ -44,7 +44,7 @@ body {
 
 
 
-/* ---------------------*/
+/* ----------Estilo para todos los header -----------*/
 
 
 header {
@@ -62,7 +62,9 @@ background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,76,1) 53%, rgba(255,0,172,1) 100%);
 }
 
-/* ---------------------*/
+
+
+/* --------estilo para todos los h1-------------*/
 
 
 
@@ -72,28 +74,33 @@ h1 {
 }
 
 
-#infobowie{
-  margin-top: 300px;
-}
 
-
-.titulosRojos { /* para H1 en Párrafos */
+.titulosRojos { /* para sólo el H1 en Párrafos */
   font-family: Wallpoet, sans-serif;
   position: relative;
   margin-top: 100px;
   color: red;
 }
 
+/* ------------------------------------ */
+
+#infobowie{
+  margin-top: 300px;
+}
 
 
-h3 {
+
+
+/* -----------estilo para los h2, h3, etc.--------------- */
+
+h2 {
   font-family: Genos, sans-serif;
   margin-bottom: 10px;
 }
 
 
 
-/* ---------------------*/
+/* -----------estilo para los ul, a, li y mezcla de todos (para un caso en particular)----------*/
 
 
 ul {
@@ -121,7 +128,7 @@ ul li a {
   font-size: 20px;
 }
 
-/* ---------------------*/
+/* ----------estilo para párrafos-----------*/
 
 
 
@@ -132,13 +139,20 @@ p {
 
 
 
-#contenido { /* para una p local para este caso en Párrafos */
+#contenido { /* para una p local, para este caso en Párrafos */
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   width: 90%;
   max-width: 700px;
 }
+
+
+
+/* ------ párrafos con animación--- */
+
+
+#contenido
 
 
 /* ---------------------*/
