@@ -152,7 +152,28 @@ p {
 /* ------ párrafos con animación--- */
 
 
-#contenido
+ #contenido {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  width: 90%;
+  max-width: 700px;
+  animation-duration: 3s;
+  animation-name: slidein;
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 50%;
+    width: 100%;
+  }
+}
 
 
 /* ---------------------*/
