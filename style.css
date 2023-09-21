@@ -158,21 +158,28 @@ p {
   text-align: justify;
   width: 90%;
   max-width: 700px;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-name: slidein;
-
+   animation-direction: alternate;
+   position: relative;
 }
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 1%;
     width: 300%;
   }
 
   to {
     margin-left: 50%;
     width: 100%;
-  }
+  } 
+  
+/*    0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;} */
 }
 
 
