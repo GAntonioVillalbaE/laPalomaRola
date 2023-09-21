@@ -109,13 +109,15 @@ ul {
   margin-right: 50px;
 }
 
+li {
+  float: right;
+}
+
 a {
   font-family: Wallpoet, serif;
 }
 
-li {
-  float: right;
-}
+
 
 ul li a {
   font-family: Wallpoet, sans-serif;
