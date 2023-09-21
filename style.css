@@ -15,6 +15,8 @@ body {
   margin: 0;
   font-family: Wallpoet, serif;
 }
+/*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
+
 
 
 /* ----Margen para todos los contenedores de tipo infogeneral--- */
@@ -25,12 +27,14 @@ body {
 }
 
 
+/* ----estilo para el selector del div en html llamado id = "contenedor-imagen"---- */
+
 
 #contenedor-imagen{
  position: relative;
 }
 
-#contenedor-imagen img{
+#contenedor-imagen img{/* aplica para la etiqueta de imagen dentro del div en html llamado id = "contenedor-imagen"  */
  width: 100%;
  height: 100%;
  position: relative;
@@ -38,8 +42,6 @@ body {
 
 
 
-
-/*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
 
 
 /* ---------------------*/
@@ -236,7 +238,7 @@ display: none;
   .ventana-emergente img {
    width: 60%;
   height: auto; 
-  position: absolute;
+  position: relative;
   outline-style: solid;
   outline-color: white;
   margin-left: 20%;
@@ -250,30 +252,7 @@ display: none;
 
 
 
-/*
-.ventana-emergente{
-  width: 400px;
-  height: 300px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-*/
-
 /* ---------------------*/
-
-
-/* #contenedor-imagen{
- position: relative;
-}
-
-#contenedor-imagen img{
- width: 100%;
- height: 100%;
- position: relative;
-}
- */
 
 
 
