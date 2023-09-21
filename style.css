@@ -7,6 +7,7 @@
 
 
 
+/* ------Este estilo aplica para todos los body---- */
 
 body {
   background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
@@ -14,6 +15,9 @@ body {
   margin: 0;
   font-family: Wallpoet, serif;
 }
+
+
+/* ----Margen para todos los contenedores de tipo infogeneral--- */
 
 .infogeneral {
   margin-top: 100px;
@@ -181,7 +185,7 @@ p {
 }
 
 
-/* ---------------------*/
+/* -------------PANTALLA DIVIDIDA--------*/
 
 
 
@@ -207,7 +211,7 @@ p {
 }
 
 
-/* ---------------------*/
+/* -------------- POP UPS-------- */
 
 .ventana-emergente{
   width: 400px;
@@ -229,10 +233,9 @@ display: none;
 }
 
 
-
-.ventana-emergente img {
-  width: 60%;
-  height: auto;
+  .ventana-emergente img {
+   width: 60%;
+  height: auto; 
   position: absolute;
   outline-style: solid;
   outline-color: white;
