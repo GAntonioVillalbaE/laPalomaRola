@@ -64,19 +64,18 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,76,1) 53%, rgba
 
 
 
-/* --------estilo para todos los h1-------------*/
+/* --------Estilo para todos los h1-------------*/
 
 
 
 
 h1 {
   text-align: center;
+  font-family: Wallpoet, serif;
 }
 
 
-
 .titulosRojos { /* para sólo el H1 en Párrafos */
-  font-family: Wallpoet, sans-serif;
   position: relative;
   margin-top: 100px;
   color: red;
@@ -84,14 +83,14 @@ h1 {
 
 /* ------------------------------------ */
 
-#infobowie{
+#infobowie{ /* para el caso de nuestro texto en el index */
   margin-top: 300px;
 }
 
 
 
 
-/* -----------estilo para los h2, h3, etc.--------------- */
+/* -----------Estilo para los h2, h3, etc.--------------- */
 
 h2 {
   font-family: Genos, sans-serif;
@@ -100,7 +99,7 @@ h2 {
 
 
 
-/* -----------estilo para los ul, a, li y mezcla de todos (para un caso en particular)----------*/
+/* -----------Estilo para los ul, a, li y mezcla de todos (para un caso en particular)----------*/
 
 
 ul {
@@ -128,7 +127,7 @@ ul li a {
   font-size: 20px;
 }
 
-/* ----------estilo para párrafos-----------*/
+/* ----------Estilo para párrafos-----------*/
 
 
 
@@ -149,7 +148,7 @@ p {
 
 
 
-/* ------ párrafos con animación--- */
+/* ------ Párrafos con animación--- */
 
 /* 
  #contenido {
@@ -276,7 +275,7 @@ display: none;
   .ventana-emergente img {
     width: 100%;
   height: 100%; 
-  position: relative;
+  position: absolute;
   outline-style: solid;
   outline-color: white;
   overflow: scroll;
