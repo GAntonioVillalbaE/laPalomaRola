@@ -241,7 +241,7 @@ p {
 }
 
 #contenedor-izquierdo {
-  width: 50%; /* vh - viewport height que es como el body de todo el navegador */
+  width: 50%; /* vh - viewport height - el body de todo el navegador */
   margin: 10px; 
 }
 
@@ -272,23 +272,21 @@ display: none;
   
   .ventana-emergente button{
   float: right;
+    
 }
 
 }
 
 
   .ventana-emergente img {
-   width: 60%;
-  height: auto; 
+    width: 100%;
+  height: 100%; 
   position: relative;
   outline-style: solid;
   outline-color: white;
-  margin-left: 20%;
-  margin-right: 20%;
-  top: 50%;
-  transform: translateY(-50%);
   overflow: scroll;
-/*   z-index: -1; */
+    margin-left: auto;
+  margin-right: auto;
 }
 
 
