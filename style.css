@@ -221,6 +221,11 @@ p {
   transform: translateY(-50%) translateX(-50%); /*restar 50% de él mismo una vez puesto el top de la coordenada en la mitad  */
 }
 
+.ventana-emergente button{
+  float: right;
+}
+
+
 /*
 .ventana-emergente{
   width: 400px;
