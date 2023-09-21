@@ -15,9 +15,17 @@ body {
   font-family: Wallpoet, serif;
 }
 
-#infogeneral{
+.infogeneral{
   margin-top: 300px;
-  
+
+}
+
+#infobowie{
+ margin-top: 300px;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ position: relative;
 }
 
 /*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
@@ -171,7 +179,7 @@ p {
 /* ---------------------*/
 
 
-#contenedor-imagen{
+/* #contenedor-imagen{
  position: relative;
 }
 
@@ -180,6 +188,7 @@ p {
  height: 100%;
  position: relative;
 }
+ */
 
 
 
