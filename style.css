@@ -5,9 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 
-https://www.fontspace.com/blair-caps-font-f9102
 
 /* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
+
 
 body {
   background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
@@ -15,7 +15,9 @@ body {
   margin: 0;
   font-family: Wallpoet, serif;
 }
+
 /*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
+
 
 
 
