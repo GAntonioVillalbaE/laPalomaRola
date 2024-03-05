@@ -279,10 +279,9 @@ p {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%); /*restar 50% de él mismo una vez puesto el top de la coordenada en la mitad  */
-display: none; 
+display: none; /* Este display no lo muestra */
   
     }
-
 
 
   .ventana-emergente img {
