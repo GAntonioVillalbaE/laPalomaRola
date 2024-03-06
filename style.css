@@ -188,6 +188,8 @@ p {
   animation-name: slidein;
    animation-direction: alternate;
    position: relative;
+     animation-iteration-count: 4; /* infinite */
+
 }
 
 @keyframes slidein {
