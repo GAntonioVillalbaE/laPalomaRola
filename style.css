@@ -1,13 +1,10 @@
 /* @import url(//fonts.googleapis.com/css?family=Genos); */
 
-
 @import url(//fonts.googleapis.com/css?family=Lora);
 
-@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
 
 /* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
-
 
 body {
   background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
@@ -18,24 +15,13 @@ body {
 
 /*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
 
-
-
-
 /* ----Margen para todos los contenedores de tipo infogeneral--- */
 
 .infogeneral {
   margin-top: 100px;
-
 }
 
-
-
-
-
-
-
 /* ----------Estilo para todos los header -----------*/
-
 
 header {
   background-color: black;
@@ -43,29 +29,29 @@ header {
   width: 100%;
   top: 0;
   z-index: 10;
-/*   font-family: Lora, serif; */
+  /*   font-family: Lora, serif; */
   font-family: Wallpoet, serif;
-/*   background: rgb(2,0,36);
+  /*   background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,116,121,1) 35%, rgba(236,0,255,1) 100%); */
 
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,76,1) 53%, rgba(255,0,172,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 76, 1) 53%,
+    rgba(255, 0, 172, 1) 100%
+  );
 }
 
-
-
 /* --------Estilo para todos los h1-------------*/
-
-
-
 
 h1 {
   text-align: center;
   font-family: Wallpoet, serif;
 }
 
-
-.titulosRojos { /* para sólo el H1 en Párrafos */
+.titulosRojos {
+  /* para sólo el H1 en Párrafos */
   position: relative;
   margin-top: 100px;
   color: blue;
@@ -73,12 +59,10 @@ h1 {
 
 /* ------------------------------------ */
 
-#infobowie{ /* para el caso de nuestro texto en el index */
+#infobowie {
+  /* para el caso de nuestro texto en el index */
   margin-top: 300px;
 }
-
-
-
 
 /* -----------Estilo para los h2, h3, etc.--------------- */
 
@@ -87,10 +71,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-
-
 /* -----------Estilo para los ul, a, li y mezcla de todos (para un caso en particular)----------*/
-
 
 ul {
   list-style-type: none;
@@ -107,8 +88,6 @@ a {
   font-family: Wallpoet, serif;
 }
 
-
-
 ul li a {
   font-family: Wallpoet, sans-serif;
   display: block;
@@ -119,32 +98,30 @@ ul li a {
   font-size: 20px;
 }
 
-
 /* ----Estilo para el selector del div o los divs en html llamado id = "contenedor-imagen"---- */
 
-
-#contenedor-imagen{
- position: relative;
+#contenedor-imagen {
+  position: relative;
 }
 
-#contenedor-imagen img{/* aplica para la etiqueta de imagen dentro del div en html llamado id = "contenedor-imagen"  */
- width: 100%;
- height: 100%;
- position: relative;
+#contenedor-imagen img {
+  /* aplica para la etiqueta de imagen dentro del div en html llamado id = "contenedor-imagen"  */
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-
-
 
 /* ----------Estilo para contenedor de iframe-----------*/
 
-
-.contenedor-iframe { /* Para usar en video youtube, que se haga responsive */
+.contenedor-iframe {
+  /* Para usar en video youtube, que se haga responsive */
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
 }
 
-.contenedor-iframe iframe { /* el iframe que está dentro del contenedor-iframe */
+.contenedor-iframe iframe {
+  /* el iframe que está dentro del contenedor-iframe */
   position: absolute;
   top: 0;
   left: 0;
@@ -152,33 +129,25 @@ ul li a {
   height: 100%;
 }
 
-
 /* ----------Estilo para párrafos-----------*/
-
-
 
 p {
   font-family: Lora, serif;
   margin-top: 10px;
 }
 
-
-
-#contenido2 { /* para una p local, para este caso en Párrafos */
+#contenido2 {
+  /* para una p local, para este caso en Párrafos */
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   width: 90%;
-  max-width: 700px; 
+  max-width: 700px;
 }
-  
-
-
 
 /* ------ Párrafos con animación--- */
 
-
- #contenido {
+#contenido {
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
@@ -186,14 +155,13 @@ p {
   max-width: 700px;
   animation-duration: 5s;
   animation-name: slidein;
-   animation-direction: alternate;
-   position: relative;
-     animation-iteration-count: 4; /* infinite */
-
+  animation-direction: alternate;
+  position: relative;
+  animation-iteration-count: 4; /* infinite */
 }
 
 @keyframes slidein {
-/*   from {
+  /*   from {
     margin-left: 100%;
     width: 300%;
   }
@@ -202,26 +170,45 @@ p {
     margin-left: 27%;
     width: 100%;
   }  */
-  
-   0%   {background: red; left: 0px; top: 0px;}
-  25%  {background: yellow; left: 200px; top: 0px;}
-  50%  {background: blue; left: 200px; top: 200px;}
-  75%  {background: green; left: 0px; top: 200px;}
-  100% {background: red; left: 0px; top: 0px;}
+
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
 }
-
-
-
 
 /* ----------Estilo para contenedor de video con iframe-----------*/
 
-.contenedor-video { /* Para usar en video local, que se haga responsive */
+.contenedor-video {
+  /* Para usar en video local, que se haga responsive */
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
 }
 
-.contenedor-video video { /* el video que esté dentro del contenedor video */
+.contenedor-video video {
+  /* el video que esté dentro del contenedor video */
   position: absolute;
   top: 0;
   left: 0;
@@ -229,10 +216,7 @@ p {
   height: 100%;
 }
 
-
 /* ------------Estilo para contenedor de botones---------*/
-
-
 
 #contenedor-botones {
   width: 100%;
@@ -242,10 +226,7 @@ p {
   justify-content: space-between;
 }
 
-
 /* -------------CONTENEDOR (PADRE E HIJOS) PARA PANTALLA DIVIDIDA--------*/
-
-
 
 #contenedor-dividido {
   width: 100%;
@@ -256,60 +237,50 @@ p {
 
 #contenedor-izquierdo {
   width: 50%; /* vh - viewport height - el body de todo el navegador */
-  margin: 10px; 
+  margin: 10px;
 }
 
 #contenedor-derecho {
   width: 50%;
 }
 
-#contenedor-derecho img{
+#contenedor-derecho img {
   width: 100%;
-  margin: 10px; 
+  margin: 10px;
 }
-
 
 /* -------------- POP UPS-------- */
 
-.ventana-emergente{
+.ventana-emergente {
   width: 400px;
   height: 300px;
   background-color: white;
-/*   margin-left: auto;
+  /*   margin-left: auto;
   margin-right: auto; */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%); /*restar 50% de él mismo una vez puesto el top de la coordenada en la mitad  */
-display: none; /* Este display no lo muestra */
-  
-    }
+  display: none; /* Este display no lo muestra */
+}
 
-
-  .ventana-emergente img {
-    width: 100%;
-  height: 100%; 
+.ventana-emergente img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   outline-style: solid;
   outline-color: white;
   overflow: scroll;
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
-  .ventana-emergente #boton-cerrar {
+.ventana-emergente #boton-cerrar {
   float: right;
-    position: relative;
+  position: relative;
 }
 
-
-
-
-
 /* ---------------------*/
-
-
-
 
 /* pantalla dividida */
 
@@ -372,13 +343,7 @@ display: none; /* Este display no lo muestra */
 
  */
 
-
-
-
-
-
 /* Conceptos divs (padre hijo) */
-
 
 /* #contenedor-padre{
   width: 40%;
@@ -399,5 +364,3 @@ display: none; /* Este display no lo muestra */
   background-color: green;
   position: absolute;
 } */
-
-
