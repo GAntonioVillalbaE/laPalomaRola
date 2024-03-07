@@ -18,3 +18,30 @@ botonCerrarVentana.onclick = function () {
   ventana[0].style.display = "none";
   
 }
+
+
+
+
+// Para controlar audio a través de un botón 
+
+
+var audio = document.getElementById("Bowie-cover");
+
+let botonPlay = document.getElementById("");
+
+function playSound () {
+  audio.play();
+  
+  
+}
+
+
+// otra forma
+
+var audio = document.getElementById("Bowie-cover")
+
+function playSound () {
+  audio.play();
+  
+  
+}
