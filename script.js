@@ -27,21 +27,22 @@ botonCerrarVentana.onclick = function () {
 
 var audio = document.getElementById("Bowie-cover");
 
-let botonPlay = document.getElementById("");
+var botonPlay = document.getElementById("boton-play");
 
-function playSound () {
-  audio.play();
-  
-  
+botonPlay.onclick  = function () {
+  audio[0].play = "play";
 }
+  
+  
+
 
 
 // otra forma
 
-var audio = document.getElementById("Bowie-cover")
+// var audio = document.getElementById("Bowie-cover")
 
-function playSound () {
-  audio.play();
+// function playSound () {
+//   audio.play();
   
   
-}
+// }
