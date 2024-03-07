@@ -30,7 +30,6 @@ botonCerrarVentana.onclick = function () {
 // otra forma
 
 function playSound() {
-  var audio = document.getElementById("Bowie-cover");
-
-  audio.play();
+  var audio = document.getElementById("audio");
+  audio.stop();
 }
