@@ -19,19 +19,19 @@ botonCerrarVentana.onclick = function () {
 
 // Para controlar reproducción de audio a través de un botón
 
-// function playSound() {
-//   var audio = document.getElementById("audio");
-//   audio.play(); // pause()
-// }
+function playSound() {
+  var audio = document.getElementById("audio");
+  audio.play(); // pause()
+}
 
 
 
 // otra forma sin llamar la función declarada de playSound()
 
-var audio = document.getElementById("audio");
+// var audio = document.getElementById("audio");
 
-var play = document.getElementByClassName("audioplay");
+// var play = document.getElementById("audioplay");
 
-play.onclick = function () {
-  audio.play();
-};
+// play.onclick = function () {
+//   audio.play();
+// };
