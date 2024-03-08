@@ -19,7 +19,7 @@ botonCerrarVentana.onclick = function () {
 
 // Para controlar audio a través de un botón
 
-// var audio = document.getElementById("Bowie-cover");
+// var audio = document.getElementById("audio");
 
 // var botonPlay = document.getElementById("boton-play");
 
@@ -29,7 +29,21 @@ botonCerrarVentana.onclick = function () {
 
 // otra forma
 
-function playSound() {
-  var audio = document.getElementById("audio");
-  audio.stop();
-}
+// function playSound() {
+//   var audio = document.getElementById("audio");
+//   audio.play();
+// }
+
+
+
+
+
+    var audio = document.getElementById('audio');
+
+    function playAudio() {
+        audio.play();
+    }
+
+    function pauseAudio() {
+        audio.pause();
+    }
