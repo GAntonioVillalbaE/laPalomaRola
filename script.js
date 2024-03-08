@@ -19,13 +19,13 @@ botonCerrarVentana.onclick = function () {
 
 // Para controlar audio a través de un botón
 
-var audio = document.getElementById("audio");
+let audio = document.getElementById("audio");
 
-var play = document.getElementById("boton-play");
+let play = document.getElementById("boton-play");
 
-play.onclick  = function () {
-  audio[0].play();
-}
+play.onclick = function () {
+  audio.play();
+};
 
 // otra forma
 
@@ -33,8 +33,3 @@ play.onclick  = function () {
 //   var audio = document.getElementById("audio");
 //   audio.play();
 // }
-
-
-
-
-
