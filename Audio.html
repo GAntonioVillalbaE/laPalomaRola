@@ -16,7 +16,10 @@
 
     <link rel="stylesheet" href="/style.css" />
 
-    <script src="/script.js"></script>
+<!--     <script src="/script.js"></script> -->
+    
+        <script src="/script.js" defer></script>
+
   </head>
 
   <body>
@@ -32,18 +35,15 @@
       <h1>Sonido/Audio &lt;audio&gt;</h1>
     </div>
 
-    <!--     
-    <button id="boton-play" onclick="playSound()">
+<!--          onclick="playSound()" -->
+    <button id="boton-play">
       Escuchar cover de Bowie
     </button>
-   -->
+  
 
-    <div id="audio-controls">
-      <button onclick="playAudio()">Reproducir</button>
-      <button onclick="pauseAudio()">Pausar</button>
-    </div>
+  
 
-    <audio id="audio" controls="controls">
+    <audio id="audio" controls="controls" volume>
       <source
         src="  https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/I'm%20Afraid%20Of%20Americans.mp3?v=1694990501722"
         type="audio/mp3"
