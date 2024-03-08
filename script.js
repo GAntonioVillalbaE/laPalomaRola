@@ -17,19 +17,21 @@ botonCerrarVentana.onclick = function () {
   ventana[0].style.display = "none";
 };
 
-// Para controlar audio a través de un botón
+// Para controlar reproducción de audio a través de un botón
 
-let audio = document.getElementById("audio");
+// function playSound() {
+//   var audio = document.getElementById("audio");
+//   audio.play(); // pause()
+// }
 
-let play = document.getElementById("boton-play");
+
+
+// otra forma sin llamar la función declarada de playSound()
+
+var audio = document.getElementById("audio");
+
+var play = document.getElementByClassName("audioplay");
 
 play.onclick = function () {
   audio.play();
 };
-
-// otra forma
-
-// function playSound() {
-//   var audio = document.getElementById("audio");
-//   audio.play();
-// }
