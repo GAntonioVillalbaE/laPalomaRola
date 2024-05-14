@@ -317,9 +317,9 @@ p {
   text-align: center;
   transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
     skew(15deg, 15deg) rotateX(50deg) rotateY(120deg) rotateZ(90deg);
-              transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
+/*               transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
       transition-timing-function: ease-in-out;
-      transition-delay: 1s;
+      transition-delay: 1s; */
 }
 
 #trans:hover {
