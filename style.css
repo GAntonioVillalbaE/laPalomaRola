@@ -225,15 +225,6 @@ p {
   height: 100%;
 }
 
-/* ------------Estilo para contenedor de botones---------*/
-
-#contenedor-botones {
-  width: 100%;
-  background-color: lightblue;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-}
 
 /* -------------CONTENEDOR (PADRE E HIJOS) PARA PANTALLA DIVIDIDA--------*/
 
@@ -295,6 +286,18 @@ p {
   position: relative;
   transform: translateX(50%);
 }
+
+
+/* ------------Estilo para contenedor de botones---------*/
+
+#contenedor-botones2 {
+  width: 100%;
+  background-color: lightblue;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* -------------- POP UPS-------- */
 
