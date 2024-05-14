@@ -27,6 +27,14 @@ function playSound() {
 
 
 
+//OTRAS FORMAS DE SINTAXIS
+
+// document.getElementById("ventana-emergente").style.display = "block";
+
+
+// document.getElementById("ventana-emergente").addEventListener("click", botonAbrirVentana);
+
+
 
 /* OTRA FORMA DE SINTAXIS DE POP UP */
 
