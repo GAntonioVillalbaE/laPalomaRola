@@ -171,10 +171,10 @@ p {
   animation-name: slidein;
   animation-direction: alternate; /* alternate-reverse */
   position: relative;
-  animation-iteration-count: 1; /* infinite */
-    animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; /* infinite */
+    animation-timing-function: ease-in;
     animation-fill-mode: both;
-  height: 100%;
+/*   height: 100%; */
   
 }
 
@@ -189,7 +189,7 @@ p {
     width: 90%;
   } 
 
-/*   0% {
+  0% {
     background: red;
     left: 0px;
     top: 0px;
@@ -213,7 +213,7 @@ p {
     background: red;
     left: 0px;
     top: 0px;
-  } */
+  }
 }
 
 /* ----------Estilo para contenedor de video con iframe-----------*/
