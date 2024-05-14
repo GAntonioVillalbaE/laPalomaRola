@@ -306,7 +306,6 @@ p {
 }
 
 /* transformaciones y transiciones */
-
 #trans {
   width: 100px;
   height: 100px;
@@ -316,8 +315,8 @@ p {
   margin-top: 80px;
   overflow: hidden;
   text-align: center;
-/*   transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
-    skew(15deg, 15deg) rotateX(50deg) rotateY(120deg) rotateZ(90deg); */
+  transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
+    skew(15deg, 15deg) rotateX(50deg) rotateY(120deg) rotateZ(90deg);
               transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
       transition-timing-function: ease-in-out;
       transition-delay: 1s;
@@ -329,6 +328,7 @@ p {
   background: yellow;
   transform: rotateX(10deg);
 }
+
 
 /* -------------- POP UPS-------- */
 

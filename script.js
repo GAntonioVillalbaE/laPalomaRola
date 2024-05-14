@@ -1,3 +1,5 @@
+// Funciones para Pop Ups
+
 let ventana = document.getElementsByClassName("ventana-emergente");
 
 let botonAbrirVentana = document.getElementById("boton-abrir");
@@ -18,7 +20,7 @@ botonCerrarVentana.onclick = function () {
   ventana[0].style.display = "none"; /* No muestra la ventana */
 };
 
-// Para controlar reproducción de audio a través de un botón
+// Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos. 
 
 function playSound() {
   var audio = document.getElementById("audio");
@@ -27,7 +29,7 @@ function playSound() {
 
 
 
-//OTRAS FORMAS DE SINTAXIS
+//OTRAS FORMAS DE SINTAXIS PARA JAVASCRIPT-HTML
 
 
 // DESDE HTML con onclick = "myFunction()", etc
@@ -36,9 +38,9 @@ function playSound() {
 
 // document.getElementById("ventana-emergente").style.display = "block";
 
-// Escuchando eventos - HTML DOM - desde JS:
+// Escuchando eventos - HTML DOM - desde JS (sin atributos en HTML):
 
-// document.getElementById("ventana-emergente").addEventListener("click", botonAbrirVentana);
+// document.getElementById("ventana-emergente").addEventListener("click", botonAbrirVentana); /* Aquí es click en vez de onclick*/
 
 // function botonAbrirVentana() {
   
