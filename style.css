@@ -15,6 +15,8 @@ body {
   background-attachment: fixed;
   background-position: center; /* Center the image  */
   background-repeat: no-repeat; /* Do not repeat the image  */
+  background-color: rgba(255, 255, 255, 0);  /*simula opacidad */
+
 }
 
 /*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
@@ -24,6 +26,7 @@ body {
 .infogeneral {
   margin-top: 100px;
 }
+
 
 /* ----------Estilo para todos los header -----------*/
 
@@ -94,6 +97,7 @@ li {
 
 a {
   font-family: Wallpoet, serif;
+  font-size: 20px; 
 }
 
 ul li a {
