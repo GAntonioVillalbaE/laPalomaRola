@@ -5,7 +5,7 @@ let botonAbrirVentana = document.getElementById("boton-abrir");
 let botonCerrarVentana = document.getElementById("boton-cerrar");
 
 botonAbrirVentana.onclick = function () {
-  console.log("click para abrir pop up");
+  // console.log("click para abrir pop up"); /* usar consola para imprimrir eventos */
   // ventana[0].style.backgroundColor = "red"; /* css: background-color */
   ventana[0].style.display = /* [0] es el primer elemento que encuentra de esa clase "ventana-emergente"*/
     "block"; /*block efecto de ocupar espacio a lo ancho de la pantalla*/
@@ -14,7 +14,7 @@ botonAbrirVentana.onclick = function () {
 /* sugerencia: escribir en camelCase las variables en JS */
 
 botonCerrarVentana.onclick = function () {
-    console.log("se cerró el pop up");
+    // console.log("se cerró el pop up");
   ventana[0].style.display = "none"; /* No muestra la ventana */
 };
 
