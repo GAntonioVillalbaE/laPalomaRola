@@ -15,7 +15,7 @@ body {
   background-attachment: fixed;
   background-position: center; /* Center the image  */
   background-repeat: no-repeat; /* Do not repeat the image  */
-/*   background-color: rgba(255, 255, 255, 0);  /*simula opacidad */ */
+/*   background-color: rgba(255, 255, 255, 0);  /*simula opacidad */
 
 }
 
@@ -60,7 +60,7 @@ h1 {
   /* para sólo el H1 en página de Párrafos */
   position: relative;
   margin-top: 100px;
-  color: blue;
+  color: red;
 }
 
 /* ------------------------------------ */
@@ -161,21 +161,24 @@ p {
 
 /* ------ Párrafos con animación--- */
 
-#contenido {
+#contenido-animado {
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
-  width: 90%;
+  width: 100%;
   max-width: 700px;
   animation-duration: 5s;
   animation-name: slidein;
-  animation-direction: alternate;
+  animation-direction: alternate; /* alternate-reverse */
   position: relative;
-  animation-iteration-count: 4; /* infinite */
+  animation-iteration-count: infinite; /* infinite */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  height: 100%;
 }
 
 @keyframes slidein {
-  /*   from {
+/*     from {
     margin-left: 100%;
     width: 300%;
   }
@@ -183,8 +186,8 @@ p {
   to {
     margin-left: 27%;
     width: 100%;
-  }  */
-
+  } 
+ */
   0% {
     background: red;
     left: 0px;
