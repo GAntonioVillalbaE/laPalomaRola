@@ -7,10 +7,14 @@
 /* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
 
 body {
-  background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
-  background-color: lightblue;
   margin: 0;
   font-family: Wallpoet, serif;
+  background-image: url("https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/n%C3%A9bula.png?v=1694995249097");
+  background-color: lightblue;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; /* Center the image  */
+  background-repeat: no-repeat; /* Do not repeat the image  */
 }
 
 /*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
@@ -23,17 +27,19 @@ body {
 
 /* ----------Estilo para todos los header -----------*/
 
+
 header {
-  background-color: black;
+  /*   background-color: black; */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
   /*   font-family: Lora, serif; */
-  font-family: Wallpoet, serif;
+  /*   font-family: 'Blair Caps', serif; */
+    font-family: Wallpoet, serif;
   /*   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,116,121,1) 35%, rgba(236,0,255,1) 100%); */
-
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,116,121,1) 35%, rgba(236,0,255,1) 100%);
+ */
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -42,16 +48,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,116,121,1) 35%, rgb
     rgba(255, 0, 172, 1) 100%
   );
 }
-
-/* --------Estilo para todos los h1-------------*/
+/* --------Estilo para todos los H1-------------*/
 
 h1 {
   text-align: center;
-  font-family: Wallpoet, serif;
 }
 
 .titulosRojos {
-  /* para sólo el H1 en Párrafos */
+  /* para sólo el H1 en página de Párrafos */
   position: relative;
   margin-top: 100px;
   color: blue;
@@ -64,9 +68,14 @@ h1 {
   margin-top: 300px;
 }
 
-/* -----------Estilo para los h2, h3, etc.--------------- */
+/* -----------Estilo para los H2, H3, etc.--------------- */
 
 h2 {
+  font-family: Genos, sans-serif;
+  margin-bottom: 10px;
+}
+
+h3 {
   font-family: Genos, sans-serif;
   margin-bottom: 10px;
 }
@@ -88,7 +97,7 @@ a {
   font-family: Wallpoet, serif;
 }
 
-ul li a {
+ul li a { /* Aquí tomamos las a que perteneces a li dentro de ul */
   font-family: Wallpoet, sans-serif;
   display: block;
   color: white;
@@ -227,30 +236,6 @@ p {
 }
 
 /* -------------CONTENEDOR (PADRE E HIJOS) PARA PANTALLA DIVIDIDA--------*/
-
-#contenedor-dividido {
-  width: 100%;
-  height: auto;
-  background-color: blue;
-  display: flex;
-}
-
-#contenedor-izquierdo {
-  width: 50%; /* vh - viewport height - el body de todo el navegador */
-  margin: 10px;
-}
-
-#contenedor-derecho {
-  width: 50%;
-}
-
-#contenedor-derecho img {
-  width: 100%;
-  margin: 10px;
-}
-
-
-/* pantalla dividida */
 
 #contenedor-dividido {
   width: 100%;
@@ -450,9 +435,9 @@ p {
   text-align: center;
   transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
     skew(15deg, 15deg) rotateX(50deg) rotateY(120deg) rotateZ(90deg);
-              transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
-      transition-timing-function: ease-in-out;
-      transition-delay: 1s;
+  transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
 }
 
 #transform:hover {
