@@ -26,12 +26,19 @@ function playSound() {
 
 
 
-// otra forma sin llamar la función declarada de playSound()
 
-// var audio = document.getElementById("audio");
+/* OTRA FORMA DE SINTAXIS DE POP UP */
 
-// var play = document.getElementById("audioplay");
 
-// play.onclick = function () {
-//   audio.play();
-// };
+// Función para abrir el pop-up
+function abrirPopup() {
+  document.getElementById("miPopup").style.display = "block";
+}
+
+// Función para cerrar el pop-up
+function cerrarPopup() {
+  document.getElementById("miPopup").style.display = "none";
+}
+
+// Asignar evento click al botón para abrir el pop-up. Esto es otra forma diferente de hacerlo: si no queremos usar dentro de nuestra etiqueta de botón el método onclick lo hacemos directamente en la hoja Javascript:
+document.getElementById("abrirPopup").addEventListener("click", abrirPopup);
