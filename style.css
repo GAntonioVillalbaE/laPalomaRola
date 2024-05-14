@@ -249,6 +249,68 @@ p {
   margin: 10px;
 }
 
+
+/* pantalla dividida */
+
+#contenedor-dividido {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: grey;
+  top: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#contenedor-izquierdo {
+  width: 60%;
+  height: auto;
+  background-color: green;
+  display: inline-block;
+  position: relative;
+}
+
+#contenedor-derecho {
+  width: 40%;
+  height: auto;
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+}
+
+#contenedor-derecho img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#contenedor-izquierdo p {
+  font-family: Lora, serif;
+  color: white;
+  margin-top: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 0;
+  position: relative;
+  text-align: justify;
+}
+
+#contenedor-izquierdo #contenedor-botones {
+  background-color: lightblue;
+  width: 50%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+  transform: translateX(50%);
+}
+
 /* -------------- POP UPS-------- */
 
 .ventana-emergente {
@@ -364,3 +426,38 @@ p {
   background-color: green;
   position: absolute;
 } */
+
+/* ------------Estilo para contenedor de botones---------*/
+
+#contenedor-botones2 {
+  width: 100%;
+  background-color: lightblue;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* transformaciones y transiciones */
+
+#transform {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 80px;
+  overflow: hidden;
+  text-align: center;
+  transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
+    skew(15deg, 15deg) rotateX(50deg) rotateY(120deg) rotateZ(90deg);
+              transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1s;
+}
+
+#transform:hover {
+  width: 300px;
+  height: 300px;
+  background: yellow;
+  transform: rotateX(10deg);
+}
