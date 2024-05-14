@@ -5,7 +5,7 @@ let botonAbrirVentana = document.getElementById("boton-abrir");
 let botonCerrarVentana = document.getElementById("boton-cerrar");
 
 botonAbrirVentana.onclick = function () {
-  console.log("clic en el boton abrir");
+  console.log("click para abrir pop up");
   // ventana[0].style.backgroundColor = "red"; /* css: background-color */
   ventana[0].style.display = /* [0] es el primer elemento que encuentra de esa clase "ventana-emergente"*/
     "block"; /*block efecto de ocupar espacio a lo ancho de la pantalla*/
@@ -14,7 +14,8 @@ botonAbrirVentana.onclick = function () {
 /* sugerencia: escribir en camelCase las variables en JS */
 
 botonCerrarVentana.onclick = function () {
-  ventana[0].style.display = "none";
+    console.log("se cerró el pop up");
+  ventana[0].style.display = "none"; /* No muestra la ventana */
 };
 
 // Para controlar reproducción de audio a través de un botón
@@ -42,3 +43,6 @@ function playSound() {
 
 // Asignar evento click al botón para abrir el pop-up. Esto es otra forma diferente de hacerlo: si no queremos usar dentro de nuestra etiqueta de botón el método onclick lo hacemos directamente en la hoja Javascript:
 // document.getElementById("abrirPopup").addEventListener("click", abrirPopup);
+
+
+/* OTRA FORMA ES ASIGNANDO EL ONCLICK DESDE EL BOTÓN y nombrando desde el botón la función */
