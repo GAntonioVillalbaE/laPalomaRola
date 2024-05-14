@@ -1,3 +1,10 @@
+// Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos. 
+
+function playSound() {
+  var audio = document.getElementById("audio");
+  audio.play(); // pause()
+}
+
 // Funciones para Pop Ups
 
 let ventana = document.getElementsByClassName("ventana-emergente");
@@ -20,12 +27,7 @@ botonCerrarVentana.onclick = function () {
   ventana[0].style.display = "none"; /* No muestra la ventana */
 };
 
-// Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos. 
 
-function playSound() {
-  var audio = document.getElementById("audio");
-  audio.play(); // pause()
-}
 
 
 
