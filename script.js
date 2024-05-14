@@ -29,10 +29,21 @@ function playSound() {
 
 //OTRAS FORMAS DE SINTAXIS
 
+
+// DESDE HTML con onclick = "myFunction()", etc
+
+//DIRECTA
+
 // document.getElementById("ventana-emergente").style.display = "block";
 
+// Escuchando eventos - HTML DOM - desde JS:
 
 // document.getElementById("ventana-emergente").addEventListener("click", botonAbrirVentana);
+
+// function botonAbrirVentana() {
+  
+//   ventana[0].style.display = "block";
+// }
 
 
 
