@@ -24,6 +24,13 @@ function playSound() {
     });
   });
 
+// Para forzar el autoplay, apenas se cargue la página. Con onload en el <body> del HTML
+// function playSound2() {
+//   var audio = document.getElementById("audio");
+//   audio.play(); // pause()
+// }
+
+
 
 
 
