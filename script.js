@@ -5,6 +5,23 @@ function playSound() {
   audio.play(); // pause()
 }
 
+
+// Para Botón de Play/Pause. Usarlo con JS
+document.getElementById('playPauseBtn').addEventListener('click', function() {
+  var audio2 = document.getElementById('audio2');
+  if (audio2.paused) {
+    audio2.play();
+    this.textContent = 'Pausar';
+  } else {
+    audio2.pause();
+    this.textContent = 'Reproducir';
+  }
+});
+
+
+
+
+
 // Funciones para Pop Ups
 
 let ventana = document.getElementsByClassName("ventana-emergente");
