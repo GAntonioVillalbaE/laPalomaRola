@@ -7,17 +7,22 @@ function playSound() {
 
 
 // Para Botón de Play/Pause. Usarlo con JS
-document.getElementById('playPauseBtn').addEventListener('click', function() {
-  var audio2 = document.getElementById('audio2');
-  if (audio2.paused) {
-    audio2.play();
-    this.textContent = 'Pausar';
-  } else {
-    audio2.pause();
-    this.textContent = 'Reproducir';
-  }
-});
 
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var audio2 = document.getElementById('audio2');
+    var playPauseBtn = document.getElementById('playPauseBtn');
+    
+    playPauseBtn.addEventListener('click', function() {
+      if (audio2.paused) {
+        audio2.play();
+        playPauseBtn.textContent = 'Pausar';
+      } else {
+        audio2.pause();
+        playPauseBtn.textContent = 'Reproducir';
+      }
+    });
+  });
 
 
 
