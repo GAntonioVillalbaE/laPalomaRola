@@ -2,7 +2,7 @@
 
 function playSound() {
   var audio = document.getElementById("audio");
-  audio.play(); // pause()
+    audio.play(); // pause()
 }
 
 
