@@ -9,20 +9,33 @@ function playSound() {
 // Para Botón de Play/Pause. Usarlo con JS
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var audio2 = document.getElementById('audio2');
-    var playPauseBtn = document.getElementById('playPauseBtn');
+document.getElementById('playPauseBtn').addEventListener('click', function() {
+  var audio = document.getElementById('audio');
+  if (audio.paused) {
+    audio.play();
+    this.textContent = 'Pausar';
+  } else {
+    audio.pause();
+    this.textContent = 'Reproducir';
+  }
+});
+
+
+// código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
+//   document.addEventListener('DOMContentLoaded', function() {
+//     var audio2 = document.getElementById('audio2');
+//     var playPauseBtn = document.getElementById('playPauseBtn');
     
-    playPauseBtn.addEventListener('click', function() {
-      if (audio2.paused) {
-        audio2.play();
-        playPauseBtn.textContent = 'Pausar';
-      } else {
-        audio2.pause();
-        playPauseBtn.textContent = 'Reproducir';
-      }
-    });
-  });
+//     playPauseBtn.addEventListener('click', function() {
+//       if (audio2.paused) {
+//         audio2.play();
+//         playPauseBtn.textContent = 'Pausar';
+//       } else {
+//         audio2.pause();
+//         playPauseBtn.textContent = 'Reproducir';
+//       }
+//     });
+//   });
 
 // Para forzar el autoplay, apenas se cargue la página. Con onload en el <body> del HTML
 // function playSound2() {
