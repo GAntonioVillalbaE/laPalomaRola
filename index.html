@@ -67,14 +67,14 @@
 <!--     Ejemplo de canvas para dibujos vectoriales -->
     
 
-     <canvas id="myCanvas">
+     <canvas id="myCanvas" width: 1481 height: 724>
 </canvas>
 
 <script>
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 ctx.fillStyle = "red";
-ctx.fillRect(ctx.width/2,   ctx.height/20, 75, 50);
+ctx.fillRect(30,   30, c.width, c.height);
 
 //Turn transparency on
 ctx.globalAlpha = 0.2;
