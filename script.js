@@ -1,3 +1,18 @@
+// Para Botón de Play/Pause. Usarlo con JS
+
+
+document.getElementById('playPauseBtn').addEventListener('click', function() {
+  var audio = document.getElementById('audio2');
+  if (audio.paused) {
+    audio.play();
+    this.textContent = 'Pausar';
+  } else {
+    audio.pause();
+    this.textContent = 'Reproducir';
+  }
+});
+
+
 
 // Funciones para Pop Ups
 
@@ -31,19 +46,8 @@ function playSound() {
 }
 
 
-// Para Botón de Play/Pause. Usarlo con JS
 
 
-document.getElementById('playPauseBtn').addEventListener('click', function() {
-  var audio = document.getElementById('audio');
-  if (audio.paused) {
-    audio.play();
-    this.textContent = 'Pausar';
-  } else {
-    audio.pause();
-    this.textContent = 'Reproducir';
-  }
-});
 
 
 // código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
