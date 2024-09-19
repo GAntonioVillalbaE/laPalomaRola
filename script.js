@@ -1,3 +1,31 @@
+
+// Funciones para Pop Ups
+
+let ventana = document.getElementsByClassName("ventana-emergente");
+
+let botonAbrirVentana = document.getElementById("boton-abrir");
+
+let botonCerrarVentana = document.getElementById("boton-cerrar");
+
+botonAbrirVentana.onclick = function () {
+  console.log(
+    "click para abrir pop up"
+  ); /* usar consola para imprimrir eventos - control + shift + J*/
+  // ventana[0].style.backgroundColor = "red"; /* css: background-color */
+  ventana[0].style.display =
+    /* [0] es el primer elemento que encuentra de esa clase "ventana-emergente"*/
+    "block"; /*block efecto de ocupar espacio a lo ancho de la pantalla*/
+};
+
+/* sugerencia: escribir en camelCase las variables en JS */
+
+botonCerrarVentana.onclick = function () {
+  // console.log("se cerró el pop up");
+  ventana[0].style.display = "none"; /* No muestra la ventana */
+};
+
+
+
 // Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos.
 
 // function playSound() {
@@ -33,32 +61,6 @@ document.getElementById("playPauseBtn").addEventListener("click", function () {
 
 
 
-
-
-// Funciones para Pop Ups
-
-let ventana = document.getElementsByClassName("ventana-emergente");
-
-let botonAbrirVentana = document.getElementById("boton-abrir");
-
-let botonCerrarVentana = document.getElementById("boton-cerrar");
-
-botonAbrirVentana.onclick = function () {
-  console.log(
-    "click para abrir pop up"
-  ); /* usar consola para imprimrir eventos */
-  // ventana[0].style.backgroundColor = "red"; /* css: background-color */
-  ventana[0].style.display =
-    /* [0] es el primer elemento que encuentra de esa clase "ventana-emergente"*/
-    "block"; /*block efecto de ocupar espacio a lo ancho de la pantalla*/
-};
-
-/* sugerencia: escribir en camelCase las variables en JS */
-
-botonCerrarVentana.onclick = function () {
-  // console.log("se cerró el pop up");
-  ventana[0].style.display = "none"; /* No muestra la ventana */
-};
 
 
 // código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
