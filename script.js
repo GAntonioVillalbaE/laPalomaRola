@@ -1,3 +1,37 @@
+// Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos.
+
+// function playSound() {
+//   var audio = document.getElementById("audio");
+//   audio.play(); // pause()
+// }
+
+// Para Botón de Play/Pause. Usarlo con JS
+
+document.getElementById("playPauseBtn").addEventListener("click", function () {
+  var audio = document.getElementById("audio2");
+  if (audio.paused) {
+    audio.play();
+    this.textContent = "Pausar";
+  } else {
+    audio.pause();
+    this.textContent = "Reproducir";
+  }
+});
+
+
+
+// Para primer ejemplo de Botón también con opción de Play/Pause
+
+
+function playSound() {
+  var audio = document.getElementById("audio");
+  if(audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
 // Funciones para Pop Ups
 
 let ventana = document.getElementsByClassName("ventana-emergente");
@@ -23,25 +57,6 @@ botonCerrarVentana.onclick = function () {
   ventana[0].style.display = "none"; /* No muestra la ventana */
 };
 
-// Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos.
-
-// function playSound() {
-//   var audio = document.getElementById("audio");
-//   audio.play(); // pause()
-// }
-
-// Para Botón de Play/Pause. Usarlo con JS
-
-document.getElementById("playPauseBtn").addEventListener("click", function () {
-  var audio = document.getElementById("audio2");
-  if (audio.paused) {
-    audio.play();
-    this.textContent = "Pausar";
-  } else {
-    audio.pause();
-    this.textContent = "Reproducir";
-  }
-});
 
 // código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
 //   document.addEventListener('DOMContentLoaded', function() {
