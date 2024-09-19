@@ -25,10 +25,10 @@ botonCerrarVentana.onclick = function () {
 
 // Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos.
 
-function playSound() {
-  var audio = document.getElementById("audio");
-  audio.play(); // pause()
-}
+// function playSound() {
+//   var audio = document.getElementById("audio");
+//   audio.play(); // pause()
+// }
 
 // Para Botón de Play/Pause. Usarlo con JS
 
