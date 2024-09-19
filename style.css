@@ -162,19 +162,19 @@ p {
 /* ------ Párrafos con animación--- */
 
 #contenido-animado {
+    position: relative;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   width: 100%;
+  /*   height: 100%; */
   max-width: 700px;
-  animation-duration: 5s;
+  animation-duration: 8s;
   animation-name: slidein;
   animation-direction: alternate; /* alternate-reverse */
-  position: relative;
   animation-iteration-count: infinite; /* infinite */
     animation-timing-function: ease-in;
     animation-fill-mode: both;
-/*   height: 100%; */
   
 }
 
