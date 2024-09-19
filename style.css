@@ -15,8 +15,7 @@ body {
   background-attachment: fixed;
   background-position: center; /* Center the image  */
   background-repeat: no-repeat; /* Do not repeat the image  */
-/*   background-color: rgba(255, 255, 255, 0);  /*simula opacidad */
-
+  /*   background-color: rgba(255, 255, 255, 0);  /*simula opacidad */
 }
 
 /*   opacity: 0.3; con div puedo manejar una imagen como fondo, a través de una clase*/
@@ -26,7 +25,6 @@ body {
 .infogeneral {
   margin-top: 100px;
 }
-
 
 /* ----------Estilo para todos los header -----------*/
 
@@ -97,7 +95,7 @@ li {
 
 a {
   font-family: Wallpoet, serif;
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 ul li a {
@@ -122,7 +120,7 @@ ul li a {
   width: 100%;
   height: 100%;
   position: relative;
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* ----------Estilo para contenedor de iframe-----------*/
@@ -162,7 +160,7 @@ p {
 /* ------ Párrafos con animación--- */
 
 #contenido-animado {
-    position: relative;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
@@ -173,13 +171,12 @@ p {
   animation-name: slidein;
   animation-direction: alternate; /* alternate-reverse */
   animation-iteration-count: infinite; /* infinite */
-    animation-timing-function: ease-in;
-    animation-fill-mode: both;
-  
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
 }
 
 @keyframes slidein {
-/*     from {
+  /*     from {
     margin-left: 100%;
     width: 300%;
   }
@@ -315,12 +312,11 @@ p {
   margin-top: 80px;
   overflow: hidden;
   text-align: center;
-/*   transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
+  /*   transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
     skew(15deg, 15deg) rotateX(50deg) rotateY(120deg) rotateZ(90deg); */
-              transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
-      transition-timing-function: ease-in-out;
-      transition-delay: 1s;
-  
+  transition: width 2s, height 2s, background 2s, transform ease-in-out 8s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
 }
 
 #trans:hover {
@@ -328,10 +324,8 @@ p {
   height: 300px;
   background: yellow;
   transform: rotate(30deg);
-/*     transform: rotateX(30deg); */
-
+  /*     transform: rotateX(30deg); */
 }
-
 
 /* -------------- POP UPS-------- */
 
@@ -363,5 +357,3 @@ p {
   float: right;
   position: relative;
 }
-
-

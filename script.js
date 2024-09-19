@@ -1,4 +1,3 @@
-
 // Funciones para Pop Ups
 
 let ventana = document.getElementsByClassName("ventana-emergente");
@@ -23,6 +22,8 @@ botonCerrarVentana.onclick = function () {
   // console.log("se cerró el pop up");
   ventana[0].style.display = "none"; /* No muestra la ventana */
 };
+
+
 
 
 
