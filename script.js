@@ -5,6 +5,19 @@
 //   audio.play(); // pause()
 // }
 
+
+// Para primer ejemplo de Botón también con opción de Play/Pause
+
+
+function playSound() {
+  var audio = document.getElementById("audio");
+  if(audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
 // Para Botón de Play/Pause. Usarlo con JS
 
 document.getElementById("playPauseBtn").addEventListener("click", function () {
@@ -20,17 +33,7 @@ document.getElementById("playPauseBtn").addEventListener("click", function () {
 
 
 
-// Para primer ejemplo de Botón también con opción de Play/Pause
 
-
-function playSound() {
-  var audio = document.getElementById("audio");
-  if(audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-}
 
 // Funciones para Pop Ups
 
