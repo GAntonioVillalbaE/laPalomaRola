@@ -63,6 +63,12 @@ h1 {
 
 /* ------------------------------------ */
 
+#logo {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
 #infobowie {
   /* para el caso de nuestro texto en el index */
   margin-top: 300px;
