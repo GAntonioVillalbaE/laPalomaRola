@@ -2,7 +2,7 @@
 
 @import url(//fonts.googleapis.com/css?family=Lora);
 
-@import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 /* ------Éste estilo aplica para todos los body de todas las html del proyecto---- */
 
@@ -73,7 +73,9 @@ ul li a {
 
 h1 {
   text-align: center;
-  font-size: 10em;
+  font-family: "Great Vibes", cursive;
+  font-weight: 5em;
+  font-style: normal;
 }
 
 .titulosRojos {
@@ -87,15 +89,14 @@ h1 {
 
 .circuloLogo {
   background-color: white;
-  height: inherit;
+  height: 100%;
   width: auto;
   border-radius: 50%;
   overflow: hidden;
 }
 .logo {
   position: relative;  
-  height: 50px;
-  width: auto;
+  width: 100%;
 }
 
 #infobowie {
@@ -117,32 +118,6 @@ h3 {
 
 /* -----------Estilo para los ul, a, li y mezcla de todos (para un caso en particular)----------*/
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-right: 50px;
-}
-
-li {
-  float: right;
-}
-
-a {
-  font-family: Wallpoet, serif;
-  font-size: 20px;
-}
-
-ul li a {
-  /* Aquí tomamos las a que perteneces a li dentro de ul */
-  font-family: Wallpoet, sans-serif;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
 
 /* ----Estilo para el selector del div o los divs en html llamado id = "contenedor-imagen"---- */
 
@@ -375,20 +350,4 @@ p {
   left: 50%;
   transform: translateY(-50%) translateX(-50%); /*restar 50% de él mismo una vez puesto el top de la coordenada en la mitad  */
   display: none; /* Este display no lo muestra */
-}
-
-.ventana-emergente img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  outline-style: solid;
-  outline-color: white;
-  overflow: scroll;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ventana-emergente #boton-cerrar {
-  float: right;
-  position: relative;
 }
