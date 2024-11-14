@@ -73,6 +73,7 @@ ul li a {
 
 h1 {
   text-align: center;
+  font-size: 10em;
 }
 
 .titulosRojos {
@@ -84,9 +85,16 @@ h1 {
 
 /* ------------------------------------ */
 
+.circuloLogo {
+  background-color: white;
+  height: inherit;
+  width: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
 .logo {
   position: relative;  
-  height: inherit;
+  height: 50px;
   width: auto;
 }
 
