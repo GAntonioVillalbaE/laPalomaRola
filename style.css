@@ -29,24 +29,45 @@ body {
 /* ----------Estilo para todos los header -----------*/
 
 header {
-  /*   background-color: black; */
   position: fixed;
-  width: 100%;
-  top: 0;
   z-index: 10;
-  /*   font-family: Lora, serif; */
-  /*   font-family: 'Blair Caps', serif; */
-  font-family: Wallpoet, serif;
-  /*   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,116,121,1) 35%, rgba(236,0,255,1) 100%);
- */
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 121, 76, 1) 53%,
-    rgba(255, 0, 172, 1) 100%
-  );
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos del header de manera uniforme */
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  top: 0;
+  background: rgba(231, 27, 76, 0.95);
+  left: 0;
+  padding: 10px 20px; /* Padding para evitar que el contenido toque los bordes */
+  box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0; /* Elimina márgenes para evitar desplazamiento */
+}
+
+li {
+  margin-right: 15px; /* Ajusta el margen derecho para evitar que se corte */
+}
+
+.separador {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
 }
 /* --------Estilo para todos los H1-------------*/
 
@@ -63,10 +84,10 @@ h1 {
 
 /* ------------------------------------ */
 
-#logo {
-  position: relative;
-  width: 30px;
-  height: 30px;
+.logo {
+  position: relative;  
+  height: inherit;
+  width: auto;
 }
 
 #infobowie {
