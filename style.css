@@ -42,9 +42,9 @@ header {
   z-index: 10;
   display: flex;
   justify-content: space-between; /* Espacia los elementos del header de manera uniforme */
-  align-items: center;
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
   width: 100%;
-  height: 13%;
+  height: 15%; /* Define la altura del header como 15% de la ventana */
   top: 0;
   background: #C1121F;
   left: 0;
@@ -98,15 +98,21 @@ h1 {
 
 .circuloLogo {
   background-color: white;
-  height: 100%;
-  width: auto;
-  border-radius: 50%;
-  overflow: hidden;
+  width: 150px; /* Define un ancho fijo */
+  height: 150px; /* Define una altura fija */
+  border-radius: 50%; /* Hace que el contenedor sea un círculo */
+  overflow: hidden; /* Oculta cualquier contenido que se salga del círculo */
+  display: flex; /* Centra la imagen dentro del círculo */
+  justify-content: center;
+  align-items: center;
 }
-.logo {
-  position: relative;  
-  width: 50px;
+
+.circuloLogo img {
+  width: 100%; /* Hace que la imagen sea tan ancha como el círculo */
+  height: 100%; /* Hace que la imagen sea tan alta como el círculo */
+  object-fit: cover; /* Hace que la imagen se recorte para llenar el círculo */
 }
+
 
 #infobowie {
   /* para el caso de nuestro texto en el index */
@@ -163,12 +169,19 @@ h3 {
 }
 
 .introduccion {
-  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/WhatsApp%20Image%202024-11-18%20at%2020.15.29.jpeg?v=1731980129783");
-  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-  background-position: center; /* Centra la imagen */
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Paloma_integrada.gif?v=1731980538494");
+  background-size: contain; /* Ajusta la imagen al tamaño del contenedor manteniendo sus proporciones */
+  background-position: center; /* Centra la imagen en el contenedor */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
-  width: 100%; /* Ajusta el ancho del div */
-  height: 300px; /* Ajusta la altura del div según lo que necesites */
+  
+  display: flex; /* Opcional: permite ajustar el contenido interno */
+  flex-direction: column; /* Opcional: organiza los elementos verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+
+  aspect-ratio: 16/9; /* Opcional: Define una proporción fija para el contenedor */
+  height: auto; /* Permite que la altura se adapte a la imagen */
+  width: 100%; /* Ajusta el ancho al 100% del contenedor principal */
 }
 
 
