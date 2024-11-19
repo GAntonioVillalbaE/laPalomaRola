@@ -104,6 +104,8 @@ h1 {
   font-family: "underwood_champion", cursive;
   font-size: 5em;
   font-style: normal;
+  text-shadow: -3px 4px 0px #FFFFFF;
+  
 }
 
 .titulosRojos {
@@ -251,8 +253,8 @@ p {
   height: 100%;
 }
 
-.titular {
-  display: abstract;
+.introduccion {
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Paloma_integrada.gif?v=1731980538494");
   background-size: contain; /* Ajusta la imagen al tamaño del contenedor manteniendo sus proporciones */
   background-position: center; /* Centra la imagen en el contenedor */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -263,6 +265,32 @@ p {
   aspect-ratio: 16/9; /* Opcional: Define una proporción fija para el contenedor */
   height: auto; /* Permite que la altura se adapte a la imagen */
   width: 100%; /* Ajusta el ancho al 100% del contenedor principal */
+}
+.bogotaniedad {
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Bogotaniedad.jpeg?v=1731982480634");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16/9;
+  height: auto;
+  width: 100%;
+}
+.enconcreto {
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Enconcreto.jpeg?v=1732044144580");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16/9;
+  height: auto;
+  width: 100%;
 }
 
 /* ----------Estilo para párrafos-----------*/
