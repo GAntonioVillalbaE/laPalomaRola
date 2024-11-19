@@ -125,6 +125,22 @@ h3 {
   margin-bottom: 10px;
 }
 
+p {
+  font-family: "underwood_champion", sans-serif;
+  font-size: 30px;
+  z-index: 1;
+  margin: auto;
+  padding: 2%;
+  text-align: justify;
+  color: white;
+  line-height: 25px;
+  word-wrap: break-word;
+  border-style: none;
+  border-width: 5px;
+}
+
+
+
 /* ------------------------------------ */
 
 
