@@ -74,7 +74,9 @@ li {
 
 ul li a {
   color: white;
+  font-family: "underwood_champion", sans-serif;
   text-align: center;
+  text-wrap: no-wrap;
   text-decoration: none;
   font-size: 20px;
 }
@@ -98,19 +100,19 @@ h1 {
 
 .circuloLogo {
   background-color: white;
-  width: 150px; /* Define un ancho fijo */
-  height: 150px; /* Define una altura fija */
+  height: 100%; /* Haz que el círculo ocupe el 100% del alto del header */
+  aspect-ratio: 1 / 1; /* Mantén el círculo perfectamente redondo */
   border-radius: 50%; /* Hace que el contenedor sea un círculo */
-  overflow: hidden; /* Oculta cualquier contenido que se salga del círculo */
+  overflow: hidden; /* Oculta las partes de la imagen que sobresalgan */
   display: flex; /* Centra la imagen dentro del círculo */
   justify-content: center;
   align-items: center;
 }
 
 .circuloLogo img {
-  width: 100%; /* Hace que la imagen sea tan ancha como el círculo */
-  height: 100%; /* Hace que la imagen sea tan alta como el círculo */
-  object-fit: cover; /* Hace que la imagen se recorte para llenar el círculo */
+  width: 100%; /* Ajusta el ancho al tamaño del círculo */
+  height: 100%; /* Ajusta la altura al tamaño del círculo */
+  object-fit: cover; /* Asegura que la imagen llene el círculo sin deformarse */
 }
 
 
