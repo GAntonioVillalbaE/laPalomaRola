@@ -104,7 +104,7 @@ h1 {
   font-family: "underwood_champion", cursive;
   font-size: 5em;
   font-style: normal;
-  text-shadow: -3px 4px 0px #FFFFFF;
+  text-shadow: -2px 1px 0px #FFFFFF, 2px -1px 0px #FFFFFF;
   
 }
 
@@ -115,16 +115,18 @@ h1 {
   color: red;
 }
 
-/* -----------Estilo para los H2, H3, etc.--------------- */
-
 h2 {
-  font-family: Genos, sans-serif;
-  margin-bottom: 10px;
+  font-family: "underwood_champion", sans-serif;
+  margin-bottom: 5px;
 }
 
 h3 {
-  font-family: Genos, sans-serif;
-  margin-bottom: 10px;
+  font-family: "underwood_champion", sans-serif;
+  margin-bottom: 5px;
+}
+h4 {
+  font-family: "underwood_champion", sans-serif;
+  margin-bottom: 5px;
 }
 
 p {
@@ -141,20 +143,7 @@ p {
   border-width: 5px;
 }
 
-
-
-/* ------------------------------------ */
-
-
-
-#infobowie {
-  /* para el caso de nuestro texto en el index */
-  margin-top: 300px;
-}
-
-
-
-/* -----------Estilo para las tarjetas de los artículos----------*/
+/* Estilo para las tarjetas de los artículos */
 
 .tarjetas-contenedor {
   display: flex;
@@ -220,6 +209,16 @@ p {
     flex: 1 1 calc(33.333% - 20px); /* Hasta 3 tarjetas por fila */
   }
 }
+
+/* ------------------------------------ */
+
+
+
+#infobowie {
+  /* para el caso de nuestro texto en el index */
+  margin-top: 300px;
+}
+
 
 /* ----Estilo para el selector del div o los divs en html llamado id = "contenedor-imagen"---- */
 
