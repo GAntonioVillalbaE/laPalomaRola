@@ -5,12 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 @font-face {
-  font-family: ParmigianoPiccoloPro-Reg;
+  font-family: ParmigianoPiccoloPro;
   src: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/ParmigianoPiccoloPro-Reg.ttf?v=1731979529010");
 }
 
 @font-face {
-  font-family: digital;
+  font-family: underwood_champion;
   src: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/underwood_champion.ttf?v=1731979665859");
 }
 
@@ -82,7 +82,7 @@ ul li a {
 
 h1 {
   text-align: center;
-  font-family: ParmigianoPiccoloPro-Reg, cursive;
+  font-family: "underwood_champion", cursive;
   font-size: 5em;
   font-style: normal;
 }
@@ -162,11 +162,21 @@ h3 {
   height: 100%;
 }
 
+.introduccion {
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/WhatsApp%20Image%202024-11-18%20at%2020.15.29.jpeg?v=1731980129783");
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  width: 100%; /* Ajusta el ancho del div */
+  height: 300px; /* Ajusta la altura del div según lo que necesites */
+}
+
+
 /* ----------Estilo para párrafos-----------*/
 
 p {
-  font-family: , serif;
-  font-size: 16px;
+  font-family: "underwood_champion", sans-serif;
+  font-size: 30px;
   z-index: 1;
   margin: auto;
   padding: 2%;
@@ -300,7 +310,7 @@ p {
 }
 
 #contenedor-izquierdo p {
-  font-family: Lora, serif;
+  font-family: digital, serif;
   color: white;
   margin-top: 200px;
   margin-left: 30px;
