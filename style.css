@@ -135,7 +135,73 @@ h3 {
 
 
 
-/* -----------Estilo para los ul, a, li y mezcla de todos (para un caso en particular)----------*/
+/* -----------Estilo para las tarjetas de los artículos----------*/
+
+.tarjetas-contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a varias filas */
+  gap: 20px; /* Espacio entre tarjetas */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px; /* Tamaño máximo de las tarjetas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espacia el contenido para empujar el botón abajo */
+  overflow: hidden;
+  height: 100%;
+}
+
+.tarjeta img {
+  width: 100%; /* Imagen ocupa todo el ancho */
+  height: auto; /* Mantiene proporción */
+}
+
+.tarjeta-contenido {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Hace que el contenedor crezca según sea necesario */
+  justify-content: space-between;
+}
+
+.tarjeta p {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #333333;
+  flex-grow: 1;
+}
+
+.tarjeta button {
+  background-color: #e71b4c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.tarjeta button:hover {
+  background-color: #c01740;
+}
+
+/* Diseño responsivo */
+@media (min-width: 768px) {
+  .tarjeta {
+    flex: 1 1 calc(33.333% - 20px); /* Hasta 3 tarjetas por fila */
+  }
+}
+
 
 
 /* ----Estilo para el selector del div o los divs en html llamado id = "contenedor-imagen"---- */
