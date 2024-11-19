@@ -122,11 +122,18 @@ h2 {
 
 h3 {
   font-family: "underwood_champion", sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
+  margin-top: 0px;
+  text-align: center;
 }
 h4 {
   font-family: "underwood_champion", sans-serif;
   margin-bottom: 5px;
+}
+
+.tarjeta a {
+  text-decoration: underline;
+  color: black;
 }
 
 p {
