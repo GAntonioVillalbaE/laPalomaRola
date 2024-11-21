@@ -50,6 +50,11 @@ header {
   box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
   overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
+.espacio-header {
+  width: 100%;
+  height: 15%; /* Define la altura del header como 15% de la ventana */
+  top: 0;
+}
 
 /* Contenido del header */
 
@@ -275,10 +280,11 @@ p {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Paloma_integrada.gif?v=1731980538494");
 }
 #bogotaniedad {
-  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Bogotaniedad.jpeg?v=1731982480634");
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/bogotaniedad-banner.jpeg?v=1732217844534");
+  background-position: 0 -10px; 
 }
 #enconcreto {
-  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Enconcreto.jpeg?v=1732044144580");
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/enconctreto-banner.jpeg?v=1732217812372");
 }
 
 /* ----------Estilo para párrafos-----------*/
