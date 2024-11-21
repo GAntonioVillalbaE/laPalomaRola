@@ -36,25 +36,20 @@ body {
 /* Header */
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 10;
   display: flex;
   justify-content: space-between; /* Espacia los elementos del header de manera uniforme */
   align-items: center; /* Alinea los elementos verticalmente en el centro */
   width: 100%;
   height: 15%; /* Define la altura del header como 15% de la ventana */
-  top: 0;
   background: #c1121f;
-  left: 0;
   padding: 10px 20px; /* Padding para evitar que el contenido toque los bordes */
   box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
   overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
-.espacio-header {
-  width: 100%;
-  height: 100px;
-  position: relative;
-}
+
 
 /* Contenido del header */
 
