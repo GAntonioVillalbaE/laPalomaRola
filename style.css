@@ -39,23 +39,23 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex;
-  justify-content: space-between; /* Espacia los elementos del header de manera uniforme */
-  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  display: flex; /* Coloca los elementos en línea horizontal */
+  justify-content: space-between; /* Espacia los elementos uniformemente */
+  align-items: center; /* Centra verticalmente los elementos */
   width: 100%;
-  height: 15%; /* Define la altura del header como 15% de la ventana */
+  height: 15vh; /* Usa una unidad relativa a la altura de la ventana */
   background: #c1121f;
-  padding: 10px 20px; /* Padding para evitar que el contenido toque los bordes */
-  box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
-  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  padding: 0 10vh; /* Evita que el contenido toque los bordes */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
+
 
 
 /* Contenido del header */
 
 .circuloLogo {
   background-color: white;
-  height: 100%; /* Haz que el círculo ocupe el 100% del alto del header */
+  height: calc(15vh - 1vh);
   aspect-ratio: 1 / 1; /* Mantén el círculo perfectamente redondo */
   border-radius: 50%; /* Hace que el contenedor sea un círculo */
   overflow: hidden; /* Oculta las partes de la imagen que sobresalgan */
