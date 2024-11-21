@@ -118,10 +118,12 @@ h1 {
 h2 {
   font-family: "underwood_champion", sans-serif;
   margin-bottom: 5px;
+  font-size: 3em;
 }
 
 h3 {
   font-family: "underwood_champion", sans-serif;
+  font-size: 2em;
   margin-bottom: 1px;
   margin-top: 0px;
   text-align: center;
@@ -169,7 +171,7 @@ p {
   max-width: 300px; /* Tamaño máximo de las tarjetas */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Espacia el contenido para empujar el botón abajo */
+  justify-content: space-between;
   overflow: hidden;
   height: 100%;
 }
@@ -280,6 +282,20 @@ p {
 }
 #enconcreto {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/enconctreto-banner.jpeg?v=1732217812372");
+}
+
+.banner-articulo {
+  background-size: contain; /* Ajusta la imagen al tamaño del contenedor manteniendo sus proporciones */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex; /* Opcional: permite ajustar el contenido interno */
+  flex-direction: column; /* Opcional: organiza los elementos verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  aspect-ratio: 4/3; /* Opcional: Define una proporción fija para el contenedor */
+  height: 500px; /* Permite que la altura se adapte a la imagen */
+  width: 100%; /* Ajusta el ancho al 100% del contenedor principal */
+  background-color: pink;
 }
 
 /* ----------Estilo para párrafos-----------*/
