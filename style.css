@@ -50,17 +50,24 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex; /* Coloca los elementos en línea horizontal */
-  justify-content: space-between; /* Espacia los elementos uniformemente */
-  align-items: center; /* Centra verticalmente los elementos */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 15vh; /* Usa una unidad relativa a la altura de la ventana */
-  background: #c1121f;
-  padding: 0 5%; /* Usa porcentaje para márgenes laterales */
-  box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+  height: 15vh;
+  padding: 0 5%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
 }
 
 
+header.bogotaneidad {
+  background: #c1121f; /* Rojo */
+}
+
+header.enconcreto {
+  background: #041b8c; /* Azul */
+}
 
 
 /* Contenido del header */
@@ -229,7 +236,7 @@ p {
 }
 
 .tarjeta button {
-  background-color: #e71b4c;
+  
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -239,9 +246,11 @@ p {
   align-self: center;
   transition: background-color 0.3s;
 }
-
-.tarjeta button:hover {
-  background-color: #c01740;
+.tarjeta button.bogotaneidad {
+  background-color: #c1121f;
+}
+.tarjeta button.bogotaneidad:hover {
+  background-color: #000000;
 }
 
 /* Diseño responsivo */
