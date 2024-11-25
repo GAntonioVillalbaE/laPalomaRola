@@ -249,7 +249,10 @@ p {
 .tarjeta button.bogotaneidad {
   background-color: #c1121f;
 }
-.tarjeta button.bogotaneidad:hover {
+.tarjeta button.enconcreto {
+  background-color: #041b8c;
+}
+.tarjeta button:hover {
   background-color: #000000;
 }
 
