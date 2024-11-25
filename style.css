@@ -19,7 +19,7 @@
 body {
   margin: 0;
   font-family: Wallpoet, serif;
-  background-color: #669bbc;
+  background-color: #ffffff;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -134,6 +134,7 @@ h1 {
 h2 {
   font-family: "underwood_champion", sans-serif;
   margin-bottom: 5px;
+  padding: 2%;
   font-size: 3em;
 }
 
@@ -166,6 +167,10 @@ p {
   word-wrap: break-word;
   border-style: none;
   border-width: 5px;
+}
+
+.contenido-articulo p {
+  color: black;
 }
 
 /* Estilo para las tarjetas de los artículos */
