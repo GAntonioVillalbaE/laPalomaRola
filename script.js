@@ -4,15 +4,19 @@ const progressBar = document.getElementById('progress-bar');
 const progressContainer = document.querySelector('.progress-container');
 const currentTimeElement = document.getElementById('current-time');
 const durationElement = document.getElementById('duration');
+const playIcon = document.getElementById('play-icon');
+const pauseIcon = document.getElementById('pause-icon');
 
 // Reproducir o pausar
 playPauseButton.addEventListener('click', () => {
   if (audio.paused) {
     audio.play();
-    playPauseButton.textContent = '⏸️';
+    playIcon.classList.add('hidden'); // Oculta el ícono de play
+    pauseIcon.classList.remove('hidden'); // Muestra el ícono de pause
   } else {
     audio.pause();
-    playPauseButton.textContent = '▶️';
+    playIcon.classList.remove('hidden'); // Muestra el ícono de play
+    pauseIcon.classList.add('hidden'); // Oculta el ícono de pause
   }
 });
 

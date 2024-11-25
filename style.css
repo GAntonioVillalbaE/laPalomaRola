@@ -250,7 +250,7 @@ p {
   height: 40px;
 }
 
-.boton-audio img.hidden {
+.hidden {
   display: none; /* Oculta la imagen cuando no está activa */
 }
 
