@@ -149,6 +149,12 @@ h3 {
   margin-top: 0px;
   text-align: center;
 }
+
+.pagina h3 {
+  text-align: justify;
+  padding-left: 2%;
+}
+
 h4 {
   font-family: "underwood_champion", sans-serif;
   margin-bottom: 0px;
