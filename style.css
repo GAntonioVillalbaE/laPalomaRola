@@ -26,7 +26,7 @@ body {
   background-repeat: no-repeat;
 }
 
-div {
+div .pagina {
   margin: 0 auto; /* Centra horizontalmente el contenido de todos los div */
   padding: 0 5%; /* Asegura un margen uniforme dentro del contenedor */
   box-sizing: border-box; /* Incluye el padding en el tamaño del contenedor */
