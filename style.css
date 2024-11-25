@@ -32,7 +32,10 @@ div .pagina {
   box-sizing: border-box; /* Incluye el padding en el tamaño del contenedor */
 }
 
-
+.pagina img {
+  padding: 2%;
+  background-color: #c2c7c9;
+}
 
 
 /* Estilo de los contenedores */
