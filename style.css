@@ -236,14 +236,22 @@ p {
 }
 
 .boton-audio {
-  background-color: #c1121f;
-  color: white;
+  background-color: transparent;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 16px;
   cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-audio img {
+  width: 40px; /* Ajusta el tamaño de las imágenes */
+  height: 40px;
+}
+
+.boton-audio img.hidden {
+  display: none; /* Oculta la imagen cuando no está activa */
 }
 
 .boton-audio:hover {
