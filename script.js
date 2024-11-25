@@ -1,67 +1,47 @@
-// Funciones para Pop Ups
+const audio = document.getElementById('audio');
+const playPauseButton = document.getElementById('play-pause');
+const progressBar = document.getElementById('progress-bar');
+const progressContainer = document.querySelector('.progress-container');
+const currentTimeElement = document.getElementById('current-time');
+const durationElement = document.getElementById('duration');
 
-let ventana = document.getElementsByClassName("ventana-emergente");
-
-let botonAbrirVentana = document.getElementById("boton-abrir");
-
-let botonCerrarVentana = document.getElementById("boton-cerrar");
-
-botonAbrirVentana.onclick = function () {
-  console.log(
-    "click para abrir pop up"
-  ); /* usar consola para imprimrir eventos - control + shift + J*/
-  // ventana[0].style.backgroundColor = "red"; /* css: background-color */
-  ventana[0].style.display =
-    /* [0] es el primer elemento que encuentra de esa clase "ventana-emergente"*/
-    "block"; /*block efecto de ocupar espacio a lo ancho de la pantalla*/
-};
-
-/* sugerencia: escribir en camelCase las variables en JS */
-
-botonCerrarVentana.onclick = function () {
-  // console.log("se cerró el pop up");
-  ventana[0].style.display = "none"; /* No muestra la ventana */
-};
-
-
-
-
-
-// Para controlar reproducción de audio a través de un botón. Otra forma de escuchar eventos.
-
-// function playSound() {
-//   var audio = document.getElementById("audio");
-//   audio.play(); // pause()
-// }
-
-
-// Para primer ejemplo de Botón también con opción de Play/Pause
-
-
-function playSound() {
-  var audio = document.getElementById("audio");
-  if(audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-}
-
-// Para Botón de Play/Pause. Usarlo con JS
-
-document.getElementById("playPauseBtn").addEventListener("click", function () {
-  var audio = document.getElementById("audio2");
+// Reproducir o pausar
+playPauseButton.addEventListener('click', () => {
   if (audio.paused) {
     audio.play();
-    this.textContent = "Pausar";
+    playPauseButton.textContent = '⏸️';
   } else {
     audio.pause();
-    this.textContent = "Reproducir";
+    playPauseButton.textContent = '▶️';
   }
 });
 
+// Actualizar la barra de progreso
+audio.addEventListener('timeupdate', () => {
+  const progressPercent = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.width = `${progressPercent}%`;
+  currentTimeElement.textContent = formatTime(audio.currentTime);
+});
 
+// Mostrar duración del audio
+audio.addEventListener('loadeddata', () => {
+  durationElement.textContent = formatTime(audio.duration);
+});
 
+// Cambiar posición del audio al hacer clic en la barra de progreso
+progressContainer.addEventListener('click', (e) => {
+  const clickX = e.offsetX;
+  const width = progressContainer.offsetWidth;
+  const newTime = (clickX / width) * audio.duration;
+  audio.currentTime = newTime;
+});
+
+// Formatear tiempo (segundos a minutos:segundos)
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+}
 
 
 // código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
