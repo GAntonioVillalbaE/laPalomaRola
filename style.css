@@ -186,9 +186,15 @@ p {
   border-width: 5px;
 }
 
+footer p {
+  color: black;
+}
+
+
 .contenido-articulo p {
   color: black;
 }
+
 
 /* Estilo para las tarjetas de los artículos */
 
