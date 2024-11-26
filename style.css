@@ -425,11 +425,26 @@ span {
   border-radius: 8px; /* (Opcional) Bordes redondeados */
 }
 
+.imgdoble .images {
+  display: flex;
+  gap: 2%; /* Espaciado entre imágenes */
+  justify-content: space-between; /* Espaciado uniforme */
+  flex-wrap: nowrap; /* Evita que las imágenes salten a una nueva fila */
+}
+
+.imgdoble .images img {
+  width: calc(50% - 1%); /* Cada imagen ocupa exactamente 50% menos el gap */
+  height: auto; /* Mantiene las proporciones */
+  border-radius: 8px; /* (Opcional) Bordes redondeados */
+  flex-shrink: 0; /* Evita que las imágenes se reduzcan más allá de su tamaño calculado */
+}
+
 .imgdoble figcaption {
   text-align: center;
   font-size: 0.9rem;
   color: #555555;
   margin-top: 0.5rem;
+  align-items: center;
 }
 
 
