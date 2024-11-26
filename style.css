@@ -146,6 +146,7 @@ h2 {
   font-family: "underwood_champion", sans-serif;
   margin-bottom: 5px;
   padding: 2%;
+  margin-left: 2%;
   font-size: 3em;
 }
 
@@ -160,6 +161,7 @@ h3 {
 .pagina h3 {
   text-align: justify;
   padding-left: 2%;
+  margin-left: 2%;
 }
 
 h4 {
@@ -414,12 +416,16 @@ span {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2%; /* Espaciado entre imágenes */
-  margin: 2%; /* Margen con respecto al contenedor */
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .imgdoble figure {
-  flex: 1 1 calc(50% - 2%); /* Cada figura ocupa 50% menos el padding */
-  margin: 0; /* Elimina márgenes propios del figure */
+  flex: 1 1 calc(50% - 2%); 
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .imgdoble img {
