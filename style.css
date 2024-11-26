@@ -403,6 +403,36 @@ span {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
 
+/* Imágenes en párrafo*/
+
+.imgdoble {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2%; /* Espaciado entre imágenes */
+  margin: 2%; /* Margen con respecto al contenedor */
+}
+
+.imgdoble figure {
+  flex: 1 1 calc(50% - 2%); /* Cada figura ocupa 50% menos el padding */
+  margin: 0; /* Elimina márgenes propios del figure */
+}
+
+.imgdoble img {
+  width: 100%; /* Ajusta la imagen al ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacios blancos por inline-block */
+  border-radius: 8px; /* (Opcional) Bordes redondeados */
+}
+
+.imgdoble figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555555;
+  margin-top: 0.5rem;
+}
+
+
 
 /* -------------CONTENEDOR (PADRE E HIJOS) PARA PANTALLA DIVIDIDA--------*/
 
