@@ -248,9 +248,7 @@ footer p {
 .tarjeta button.enconcreto {
   background-color: #041b8c;
 }
-.tarjeta button:hover {
-  background-color: #000000;
-}
+
 
 /* Diseño responsivo */
 @media (min-width: 768px) {
@@ -352,6 +350,9 @@ span {
 #introduccion {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Paloma_integrada.gif?v=1731980538494");
 }
+#columnas {
+  background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Paloma_inquisitiva.jpeg?v=1732044543984");
+}
 #bogotaneidad {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/bogotaniedad-banner.jpeg?v=1732217844534");
   background-position: 0 -10px;
@@ -360,6 +361,76 @@ span {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/enconcreto-banner.jpeg?v=1732217812372");
 }
 
+
+/* -------------CONTENEDOR (PADRE E HIJOS) PARA PANTALLA DIVIDIDA--------*/
+
+.contenedor-dividido {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: grey;
+  top: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#contenedor-izquierdo {
+  width: 60%;
+  height: auto;
+  background-color: #c1121f;
+  display: inline-block;
+  position: relative;
+}
+
+#contenedor-derecho {
+  width: 40%;
+  height: auto;
+  background-color: #041b8c;
+  display: inline-block;
+  position: relative;
+}
+
+.contenedor-dividido img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contenedor-dividido button {
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+#contenedor-izquierdo p {
+  font-family: digital, serif;
+  color: white;
+  margin-top: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 0;
+  position: relative;
+  text-align: justify;
+}
+
+#contenedor-izquierdo #contenedor-botones {
+  background-color: lightblue;
+  width: 50%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+  transform: translateX(50%);
+}
 /* ----------Estilo para contenedor de video con iframe-----------*/
 
 .contenedor-video {
@@ -424,63 +495,7 @@ span {
   align-items: center;
 }
 
-/* -------------CONTENEDOR (PADRE E HIJOS) PARA PANTALLA DIVIDIDA--------*/
 
-#contenedor-dividido {
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  background-color: grey;
-  top: 0;
-  z-index: -1;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-#contenedor-izquierdo {
-  width: 60%;
-  height: auto;
-  background-color: green;
-  display: inline-block;
-  position: relative;
-}
-
-#contenedor-derecho {
-  width: 40%;
-  height: auto;
-  background-color: blue;
-  display: inline-block;
-  position: relative;
-}
-
-#contenedor-derecho img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#contenedor-izquierdo p {
-  font-family: digital, serif;
-  color: white;
-  margin-top: 200px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 0;
-  position: relative;
-  text-align: justify;
-}
-
-#contenedor-izquierdo #contenedor-botones {
-  background-color: lightblue;
-  width: 50%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  position: relative;
-  transform: translateX(50%);
+button:hover {
+  background-color: #000000;
 }
