@@ -1,39 +1,39 @@
-const audio = document.getElementById('audio');
-const playPauseButton = document.getElementById('play-pause');
-const progressBar = document.getElementById('progress-bar');
-const progressContainer = document.querySelector('.progress-container');
-const currentTimeElement = document.getElementById('current-time');
-const durationElement = document.getElementById('duration');
-const playIcon = document.getElementById('play-icon');
-const pauseIcon = document.getElementById('pause-icon');
+const audio = document.getElementById("audio");
+const playPauseButton = document.getElementById("play-pause");
+const progressBar = document.getElementById("progress-bar");
+const progressContainer = document.querySelector(".progress-container");
+const currentTimeElement = document.getElementById("current-time");
+const durationElement = document.getElementById("duration");
+const playIcon = document.getElementById("play-icon");
+const pauseIcon = document.getElementById("pause-icon");
 
 // Reproducir o pausar
-playPauseButton.addEventListener('click', () => {
+playPauseButton.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playIcon.classList.add('hidden'); // Oculta el ícono de play
-    pauseIcon.classList.remove('hidden'); // Muestra el ícono de pause
+    playIcon.classList.add("hidden"); // Oculta el ícono de play
+    pauseIcon.classList.remove("hidden"); // Muestra el ícono de pause
   } else {
     audio.pause();
-    playIcon.classList.remove('hidden'); // Muestra el ícono de play
-    pauseIcon.classList.add('hidden'); // Oculta el ícono de pause
+    playIcon.classList.remove("hidden"); // Muestra el ícono de play
+    pauseIcon.classList.add("hidden"); // Oculta el ícono de pause
   }
 });
 
 // Actualizar la barra de progreso
-audio.addEventListener('timeupdate', () => {
+audio.addEventListener("timeupdate", () => {
   const progressPercent = (audio.currentTime / audio.duration) * 100;
   progressBar.style.width = `${progressPercent}%`;
   currentTimeElement.textContent = formatTime(audio.currentTime);
 });
 
 // Mostrar duración del audio
-audio.addEventListener('loadeddata', () => {
+audio.addEventListener("loadeddata", () => {
   durationElement.textContent = formatTime(audio.duration);
 });
 
 // Cambiar posición del audio al hacer clic en la barra de progreso
-progressContainer.addEventListener('click', (e) => {
+progressContainer.addEventListener("click", (e) => {
   const clickX = e.offsetX;
   const width = progressContainer.offsetWidth;
   const newTime = (clickX / width) * audio.duration;
@@ -44,9 +44,8 @@ progressContainer.addEventListener('click', (e) => {
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60);
-  return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+  return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
 }
-
 
 // código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
 //   document.addEventListener('DOMContentLoaded', function() {

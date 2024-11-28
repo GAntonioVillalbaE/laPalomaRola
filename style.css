@@ -28,7 +28,6 @@ body {
   overflow-x: hidden;
 }
 
-
 div .pagina {
   margin: 0 auto;
   padding: 0 5%;
@@ -39,7 +38,6 @@ div .pagina {
   padding: 2%;
   background-color: #c2c7c9;
 }
-
 
 /* Header */
 
@@ -57,7 +55,6 @@ header {
   transition: background-color 0.3s ease-in-out;
 }
 
-
 header.bogotaneidad {
   background: #c1121f; /* Rojo */
 }
@@ -65,7 +62,6 @@ header.bogotaneidad {
 header.enconcreto {
   background: #041b8c; /* Azul */
 }
-
 
 /* Contenido del header */
 
@@ -92,7 +88,6 @@ header.enconcreto {
     height: 10vh;
   }
 }
-
 
 ul {
   list-style-type: none;
@@ -128,8 +123,7 @@ h1 {
   font-family: "underwood_champion", cursive;
   font-size: 5em;
   font-style: normal;
-  text-shadow: -2px 1px 0px #FFFFFF, 2px -1px 0px #FFFFFF;
-  
+  text-shadow: -2px 1px 0px #ffffff, 2px -1px 0px #ffffff;
 }
 
 .titulosRojos {
@@ -187,17 +181,15 @@ p {
 
 footer p {
   color: black;
-  margin-left:  2%;
-  margin-right:  2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-
 
 .contenido-articulo p {
   color: black;
-  margin-left:  2%;
-  margin-right:  2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-
 
 /* Estilo para las tarjetas de los artículos */
 
@@ -245,7 +237,6 @@ footer p {
 }
 
 .tarjeta button {
-  
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -333,7 +324,6 @@ span {
   color: #333333;
 }
 
-
 /* ----------Estilo para contenedor de iframe-----------*/
 
 .contenedor-iframe {
@@ -353,11 +343,11 @@ span {
 }
 
 .banner {
-  width: 100vw; /* Ocupa todo el ancho del viewport */
-  height: 80vh; /* Ocupa todo el alto del viewport */
-  background-size: cover; /* Asegura que la imagen cubra completamente el contenedor */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,41 +358,26 @@ span {
 }
 #bogotaneidad {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/bogotaniedad-banner.jpeg?v=1732217844534");
-  background-position: 0 -10px; 
+  background-position: 0 -10px;
 }
 #enconcreto {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/enconcreto-banner.jpeg?v=1732217812372");
 }
 
-.banner-articulo {
-  background-size: contain; /* Ajusta la imagen al tamaño del contenedor manteniendo sus proporciones */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  display: flex; /* Opcional: permite ajustar el contenido interno */
-  flex-direction: column; /* Opcional: organiza los elementos verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
-  justify-content: center; /* Centra el contenido verticalmente */
-  aspect-ratio: 4/3; /* Opcional: Define una proporción fija para el contenedor */
-  height: 500px; /* Permite que la altura se adapte a la imagen */
-  width: 100%; /* Ajusta el ancho al 100% del contenedor principal */
-  background-color: pink;
-}
-
-
 /* ----------Estilo para contenedor de video con iframe-----------*/
 
 .contenedor-video {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  min-height: 100vh; /* Ocupa toda la altura de la ventana */
-  background-color: #f5f5f5; /* Opcional, para un fondo gris claro */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
 }
 
 .contenedor-video iframe {
-  border: 5px solid #cccccc; /* Agrega un marco gris */
-  border-radius: 8px; /* Bordes redondeados para un efecto más elegante */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  border: 5px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Imágenes en párrafo*/
@@ -411,7 +386,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2%; /* Espaciado entre imágenes */
+  gap: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 10%;
@@ -419,30 +394,30 @@ span {
 }
 
 .imgdoble figure {
-  flex: 1 1 calc(50% - 2%); 
+  flex: 1 1 calc(50% - 2%);
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .imgdoble img {
-  width: 100%; /* Ajusta la imagen al ancho de su contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Elimina espacios blancos por inline-block */
-  border-radius: 8px; /* (Opcional) Bordes redondeados */
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .imgdoble .images {
   display: flex;
-  gap: 2%; /* Espaciado entre imágenes */
-  justify-content: space-between; /* Espaciado uniforme */
-  flex-wrap: nowrap; /* Evita que las imágenes salten a una nueva fila */
+  gap: 2%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .imgdoble .images img {
-  width: calc(50% - 1%); /* Cada imagen ocupa exactamente 50% menos el gap */
-  height: auto; /* Mantiene las proporciones */
-  border-radius: 8px; /* (Opcional) Bordes redondeados */
-  flex-shrink: 0; /* Evita que las imágenes se reduzcan más allá de su tamaño calculado */
+  width: calc(50% - 1%);
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .imgdoble figcaption {
@@ -452,8 +427,6 @@ span {
   margin-top: 0.5rem;
   align-items: center;
 }
-
-
 
 /* -------------CONTENEDOR (PADRE E HIJOS) PARA PANTALLA DIVIDIDA--------*/
 
@@ -514,55 +487,4 @@ span {
   margin-bottom: 40px;
   position: relative;
   transform: translateX(50%);
-}
-
-/* ------------Estilo para contenedor de botones página de botones---------*/
-
-#contenedor-botones2 {
-  width: 100%;
-  background-color: lightblue;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* transformaciones y transiciones */
-#trans {
-  width: 100px;
-  height: 100px;
-  background-color: lightblue;
-  border: 1px solid black;
-  border-radius: 30px;
-  margin-top: 80px;
-  overflow: hidden;
-  text-align: center;
-  transform: translate(300px, 200px) rotate(45deg) scale(2, 2)
-    skew(15deg, 15deg) rotateX(50deg) rotateY(120deg) rotateZ(90deg);
-
-  transition: width 2s, height 2s, background 2s, transform ease-in-out 2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 1s;
-}
-
-#trans:hover {
-  width: 300px;
-  height: 300px;
-  background: yellow;
-  transform: rotate(30deg);
-  /*     transform: rotateX(30deg); */
-}
-
-/* -------------- POP UPS-------- */
-
-.ventana-emergente {
-  width: 400px;
-  height: 300px;
-  background-color: white;
-  /*   margin-left: auto;
-  margin-right: auto; */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%); /*restar 50% de él mismo una vez puesto el top de la coordenada en la mitad  */
-  display: none; /* Este display no lo muestra */
 }
