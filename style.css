@@ -82,12 +82,7 @@ header.enconcreto {
   object-fit: cover; /* Asegura que la imagen llene el círculo sin deformarse */
 }
 
-@media (max-width: 600px) {
-  .circuloLogo {
-    width: 10vh; /* Ajusta el tamaño del círculo */
-    height: 10vh;
-  }
-}
+
 
 ul {
   list-style-type: none;
@@ -186,6 +181,7 @@ footer p {
 }
 
 .contenido-articulo p {
+  font-family: "arial", sans-serif;
   color: black;
   margin-left: 2%;
   margin-right: 2%;
