@@ -134,6 +134,7 @@ h2 {
   padding: 2%;
   margin-left: 2%;
   font-size: 3em;
+  text-shadow: -2px 1px 0px #ffffff, 2px -1px 0px #ffffff;
 }
 
 h3 {
@@ -232,7 +233,7 @@ footer p {
   flex-grow: 1;
 }
 
-.tarjeta button {
+button {
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -391,30 +392,34 @@ span {
   display: inline-block;
   position: relative;
 }
+#contenedor-derecho p {
+  font-family: "underwood_champion", cursive;
+  color: white;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 0;
+  position: relative;
+  text-align: justify;
+}
 
 .contenedor-dividido img {
-  width: 100%;
+  width: 60%;
   height: auto;
+  align-self: center;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .contenedor-dividido button {
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 14px;
-  align-self: center;
-  transition: background-color 0.3s;
+  background-color: white;
+  color: #000000;
+  margin-bottom: 0;
 }
 #contenedor-izquierdo p {
-  font-family: digital, serif;
+  font-family: "underwood_champion", cursive;
   color: white;
-  margin-top: 200px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
   margin-bottom: 0;
   position: relative;
   text-align: justify;
