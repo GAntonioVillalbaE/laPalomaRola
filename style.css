@@ -383,6 +383,7 @@ span {
   background-color: #c1121f;
   display: inline-block;
   position: relative;
+  align-items: center;
 }
 
 #contenedor-derecho {
@@ -391,6 +392,7 @@ span {
   background-color: #041b8c;
   display: inline-block;
   position: relative;
+  align-items: center;
 }
 #contenedor-derecho p {
   font-family: "underwood_champion", cursive;
@@ -400,7 +402,7 @@ span {
   margin-right: 1%;
   margin-bottom: 0;
   position: relative;
-  text-align: justify;
+  text-align: justify
 }
 
 .contenedor-dividido img {
