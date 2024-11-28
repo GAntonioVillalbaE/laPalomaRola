@@ -24,9 +24,10 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100vw; /* Asegura que el ancho sea el de la pantalla */
+  width: 100%;
   overflow-x: hidden;
 }
+
 
 div .pagina {
   margin: 0 auto;
@@ -39,12 +40,6 @@ div .pagina {
   background-color: #c2c7c9;
 }
 
-
-/* Estilo de los contenedores */
-
-.infogeneral {
-  margin-top: 300px;
-}
 
 /* Header */
 
