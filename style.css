@@ -20,16 +20,18 @@ body {
   margin: 0;
   font-family: Wallpoet, serif;
   background-color: #ffffff;
-  background-size: cover;
+  background-size: auto;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100vw; /* Asegura que el ancho sea el de la pantalla */
+  overflow-x: hidden;
 }
 
 div .pagina {
-  margin: 0 auto; /* Centra horizontalmente el contenido de todos los div */
-  padding: 0 5%; /* Asegura un margen uniforme dentro del contenedor */
-  box-sizing: border-box; /* Incluye el padding en el tamaño del contenedor */
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
 .pagina img {
@@ -113,7 +115,7 @@ li {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 ul li a {
@@ -122,7 +124,7 @@ ul li a {
   text-align: center;
   text-wrap: no-wrap;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 /* Texto */
 
@@ -356,16 +358,15 @@ span {
 }
 
 .banner {
-  background-size: contain; /* Ajusta la imagen al tamaño del contenedor manteniendo sus proporciones */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  display: flex; /* Opcional: permite ajustar el contenido interno */
-  flex-direction: column; /* Opcional: organiza los elementos verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
-  justify-content: center; /* Centra el contenido verticalmente */
-  aspect-ratio: 16/9; /* Opcional: Define una proporción fija para el contenedor */
-  height: auto; /* Permite que la altura se adapte a la imagen */
-  width: 100%; /* Ajusta el ancho al 100% del contenedor principal */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
 }
 #introduccion {
   background-image: url("https://cdn.glitch.global/2ba34b87-71b8-4ddb-a57a-d646b7e48268/Paloma_integrada.gif?v=1731980538494");
