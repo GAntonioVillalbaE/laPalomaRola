@@ -125,13 +125,6 @@ h1 {
   text-shadow: -2px 1px 0px #ffffff, 2px -1px 0px #ffffff;
 }
 
-.titulosRojos {
-  /* para el H1 en página de Párrafos */
-  position: relative;
-  margin-top: 100px;
-  color: red;
-}
-
 h2 {
   font-family: "underwood_champion", sans-serif;
   margin-bottom: 5px;
@@ -232,7 +225,7 @@ footer p {
 
 .tarjeta p {
   margin-bottom: 16px;
-  font-size: 14px;
+  font-size: 1.1rem;
   color: #333333;
   flex-grow: 1;
 }
@@ -243,7 +236,7 @@ button {
   border-radius: 4px;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1.1rem;
   align-self: center;
   transition: background-color 0.3s;
 }
@@ -415,7 +408,7 @@ span {
   align-self: center;
   position: relative;
 }
-.contenedor-dividido button {
+button.columna {
   background-color: white;
   color: black;
   margin-bottom: 0;
