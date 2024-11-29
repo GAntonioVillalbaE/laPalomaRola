@@ -55,6 +55,10 @@ header {
   transition: background-color 0.3s ease-in-out;
 }
 
+header.home {
+  background-image: linear-gradient(180deg, #c1121f , #041b8c);
+}
+
 header.bogotaneidad {
   background: #c1121f; /* Rojo */
 }
@@ -378,7 +382,7 @@ span {
 }
 
 #contenedor-izquierdo {
-  width: 60%;
+  width: 50%;
   height: auto;
   background-color: #c1121f;
   display: inline-block;
@@ -387,36 +391,14 @@ span {
 }
 
 #contenedor-derecho {
-  width: 40%;
+  width: 50%;
   height: auto;
   background-color: #041b8c;
   display: inline-block;
   position: relative;
   align-items: center;
 }
-#contenedor-derecho p {
-  font-family: "underwood_champion", cursive;
-  color: white;
-  margin-top: 2%;
-  margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 0;
-  position: relative;
-  text-align: justify
-}
-
-.contenedor-dividido img {
-  width: 60%;
-  height: auto;
-  align-self: center;
-  position: relative;
-}
-.contenedor-dividido button {
-  background-color: white;
-  color: #000000;
-  margin-bottom: 0;
-}
-#contenedor-izquierdo p {
+.contenedor-dividido p {
   font-family: "underwood_champion", cursive;
   color: white;
   margin-top: 2%;
@@ -427,17 +409,19 @@ span {
   text-align: justify;
 }
 
-#contenedor-izquierdo #contenedor-botones {
-  background-color: lightblue;
-  width: 50%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
-  margin-top: 60px;
-  margin-bottom: 40px;
+.contenedor-dividido img {
+  width: 60%;
+  height: auto;
+  align-self: center;
   position: relative;
-  transform: translateX(50%);
 }
+.contenedor-dividido button {
+  background-color: white;
+  color: black;
+  margin-bottom: 0;
+  align-self: center;
+}
+
 /* ----------Estilo para contenedor de video con iframe-----------*/
 
 .contenedor-video {
