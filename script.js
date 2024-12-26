@@ -47,6 +47,35 @@ function formatTime(seconds) {
   return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menuList = header.querySelector("ul");
+
+  function checkOverflow() {
+    // Verifica si el contenido del <ul> se desborda
+    const isOverflowing = menuList.scrollWidth > header.offsetWidth;
+
+    if (isOverflowing) {
+      menuList.classList.add("deplegable");
+      menuToggle.style.display = "block";
+    } else {
+      menuList.classList.remove("deplegable");
+      menuToggle.style.display = "none";
+    }
+  }
+
+  // Alternar el menú desplegable al hacer clic en el botón
+  menuToggle.addEventListener("click", function () {
+    menuList.classList.toggle("show");
+  });
+
+  // Revisa el desbordamiento al cargar y redimensionar
+  checkOverflow();
+  window.addEventListener("resize", checkOverflow);
+});
+
+
 // código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
 //   document.addEventListener('DOMContentLoaded', function() {
 //     var audio2 = document.getElementById('audio2');

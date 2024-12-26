@@ -96,16 +96,18 @@ header.enconcreto {
   object-fit: cover; /* Asegura que la imagen llene el círculo sin deformarse */
 }
 
-ul {
+header ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0; /* Elimina márgenes para evitar desplazamiento */
+  padding: 1%;
 }
 
-li {
-  margin-right: 15px; /* Ajusta el margen derecho para evitar que se corte */
+header ul li {
+  white-space: nowrap;
+  padding: 1%;
 }
 
 .separador {
@@ -114,6 +116,44 @@ li {
   text-decoration: none;
   font-size: 1.3rem;
 }
+
+header .menu-toggle {
+  display: none; /* Ocultamos inicialmente */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #dddddd; /* Borde proporcional */
+  border-radius: 0.5rem;
+  background-color: #eeeeee;
+}
+
+header ul.deplegable {
+  display: none; /* Ocultamos el menú desplegable inicialmente */
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 0.1rem solid #ddd;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+header ul.deplegable li {
+  padding: 1rem; /* Espaciado proporcional */
+  border-bottom: 0.1rem solid #dddddd;
+}
+
+header ul.deplegable li:last-child {
+  border-bottom: none;
+}
+
+header ul.deplegable.show {
+  display: flex; /* Mostramos el menú desplegable */
+}
+
 
 ul li a {
   color: white;
@@ -270,6 +310,14 @@ button {
     margin: 0;
     padding: 1.5% 2%;
   }
+  
+  header ul {
+    display: none; /* Ocultamos la lista estándar en pantallas pequeñas */
+  }
+  header .menu-toggle {
+    display: block; /* Mostramos el botón de menú */
+  }
+}
 
   h1,
   h2,
@@ -281,7 +329,8 @@ button {
     flex-direction: column; /* Cambia la dirección a vertical */
   }
 
-}
+}}
+
 
 /* Estilo Audio */
 
