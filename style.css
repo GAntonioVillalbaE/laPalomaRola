@@ -21,8 +21,7 @@
 }
 
 img,
-video,
-iframe {
+video {
   max-width: 100%;
   height: auto;
 }
@@ -129,31 +128,30 @@ header .menu-toggle {
   background-color: #eeeeee;
 }
 
-header ul.deplegable {
+header ul.menu-list.deplegable {
   display: none; /* Ocultamos el menú desplegable inicialmente */
   flex-direction: column;
   position: absolute;
   top: 100%;
   right: 0;
   background-color: white;
-  border: 0.1rem solid #ddd;
+  border: 0.1rem solid #dddddd;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
-header ul.deplegable li {
+header ul.menu-list.deplegable li {
   padding: 1rem; /* Espaciado proporcional */
   border-bottom: 0.1rem solid #dddddd;
 }
 
-header ul.deplegable li:last-child {
+header ul.menu-list.deplegable li:last-child {
   border-bottom: none;
 }
 
-header ul.deplegable.show {
+header ul.menu-list.show {
   display: flex; /* Mostramos el menú desplegable */
 }
-
 
 ul li a {
   color: white;
@@ -310,14 +308,6 @@ button {
     margin: 0;
     padding: 1.5% 2%;
   }
-  
-  header ul {
-    display: none; /* Ocultamos la lista estándar en pantallas pequeñas */
-  }
-  header .menu-toggle {
-    display: block; /* Mostramos el botón de menú */
-  }
-}
 
   h1,
   h2,
@@ -328,9 +318,7 @@ button {
   .contenedor-dividido {
     flex-direction: column; /* Cambia la dirección a vertical */
   }
-
-}}
-
+}
 
 /* Estilo Audio */
 

@@ -50,7 +50,7 @@ function formatTime(seconds) {
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
   const menuToggle = document.querySelector(".menu-toggle");
-  const menuList = header.querySelector("ul");
+  const menuList = header.querySelector(".menu-list");
 
   function checkOverflow() {
     // Verifica si el contenido del <ul> se desborda
@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
   checkOverflow();
   window.addEventListener("resize", checkOverflow);
 });
-
 
 // código para forzar que primero cargue el contenido el HTML y luego sí la función en JS. Esto se puede evitar poniendo defer en la etiqueta script en HTML.
 //   document.addEventListener('DOMContentLoaded', function() {
