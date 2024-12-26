@@ -16,16 +16,25 @@
 
 /* Cuerpo de las páginas */
 
+* {
+    box-sizing: border-box;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: Wallpoet, serif;
   background-color: #ffffff;
   background-size: auto;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 div .pagina {
